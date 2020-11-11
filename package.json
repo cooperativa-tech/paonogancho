@@ -1,4 +1,5 @@
 {
+  "browserslist": "ie 11",
   "scripts": {
     "dev": "NODE_ENV=development snowpack dev",
     "build": "NODE_ENV=production snowpack build",
@@ -8,14 +9,18 @@
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@snowpack/plugin-optimize": "^0.2.8",
     "@snowpack/plugin-postcss": "^1.0.7",
     "@snowpack/plugin-run-script": "^2.2.0",
+    "@snowpack/plugin-webpack": "^2.1.1",
+    "autoprefixer": "^10.0.2",
     "cssnano": "^4.1.10",
     "postcss": "^8.1.6",
     "postcss-cli": "^8.2.0",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-css-variables": "^0.17.0",
+    "postcss-custom-media": "^7.0.8",
     "postcss-import": "^13.0.0",
+    "postcss-media-minmax": "^4.0.0",
+    "postcss-nested": "^5.0.1",
     "prettier": "^2.0.5",
     "snowpack": "^2.17.0"
   }

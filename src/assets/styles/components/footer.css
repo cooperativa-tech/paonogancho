@@ -1,3 +1,7 @@
 footer {
   color: red;
+
+  @media (--mobile) {
+    color: lightblue;
+  }
 }

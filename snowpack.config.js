@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     "@snowpack/plugin-postcss",
     ["@snowpack/plugin-run-script", { cmd: "eleventy", watch: "$1 --watch" }],
-    ["@snowpack/plugin-optimize", { preloadModules: true }],
+    "@snowpack/plugin-webpack",
   ],
   devOptions: {
     open: "none",
