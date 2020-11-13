@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
     // Templates:
     "html",
     "njk",
+    "liquid",
     "md",
     // Static Assets:
     "jpeg",
@@ -12,12 +13,12 @@ module.exports = function (eleventyConfig) {
     "woff",
     "woff2",
   ]);
-  eleventyConfig.addPassthroughCopy("src/static");
+  eleventyConfig.addPassthroughCopy({ "src/static": "." });
 
   return {
     dir: {
       input: "src/",
-      data: "data",
+      data: "_data",
       includes: "_includes",
       output: "_output",
     },

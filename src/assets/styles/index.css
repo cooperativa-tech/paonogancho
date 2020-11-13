@@ -10,22 +10,16 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-  padding: 2rem;
-
   background: #222;
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
 }
 
-main {
-  flex-grow: 1;
-}
+.center {
+  position: absolute;
 
-a {
-  color: grey;
+  top: 30%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }

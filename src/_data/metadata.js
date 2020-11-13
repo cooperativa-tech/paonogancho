@@ -1,7 +1,7 @@
 module.exports = {
   title: "Pão no Gancho",
-  description: "Example description (WIP)",
-  keywords: "some, example, keywords",
+  description: "Coming soon",
+  keywords: "coming soon",
   lang: "pt",
   host: "https://paonogancho.pt",
 };

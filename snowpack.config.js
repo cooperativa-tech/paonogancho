@@ -9,6 +9,7 @@ module.exports = {
     "@snowpack/plugin-webpack",
   ],
   devOptions: {
+    hmrDelay: 300,
     open: "none",
   },
 };
