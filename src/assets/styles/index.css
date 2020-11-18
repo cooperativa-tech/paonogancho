@@ -8,13 +8,9 @@
   line-height: 1.2;
 }
 
-html,
-body {
-  min-height: 100%;
-}
-
-body {
+html {
   background: #222;
   color: #eee;
   font-family: "Work Sans", sans-serif;
+  font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
