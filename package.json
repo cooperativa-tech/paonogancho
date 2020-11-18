@@ -16,12 +16,12 @@
     "cssnano": "^4.1.10",
     "postcss": "^8.1.6",
     "postcss-cli": "^8.2.0",
-    "postcss-css-variables": "^0.17.0",
     "postcss-custom-media": "^7.0.8",
     "postcss-import": "^13.0.0",
     "postcss-media-minmax": "^4.0.0",
     "postcss-nested": "^5.0.1",
     "prettier": "^2.0.5",
-    "snowpack": "^2.17.0"
+    "snowpack": "^2.17.0",
+    "tailwindcss": "^1.9.6"
   }
 }
