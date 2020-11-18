@@ -30,16 +30,5 @@ module.exports = {
       teal: "#67D6C2",
       white: "#FFFFFF",
     },
-    extend: {
-      gap: {
-        5: "1.4rem",
-      },
-      textOpacity: {
-        80: "0.80",
-      },
-      backgroundOpacity: {
-        95: "0.95",
-      },
-    },
   },
 };
