@@ -2,24 +2,39 @@
 layout: layouts/base.liquid
 ---
 
-<div class="grid grid-cols-3 grid-rows-2 min-h-screen sm:grid-cols-2 sm:grid-rows-none">
+<div
+  class="grid grid-cols-3 grid-rows-2 min-h-screen sm:grid-cols-2 sm:grid-rows-none"
+>
   <div class="py-24 px-20 bg-blue-dark col-span-2 sm:pt-16 sm:pb-32 sm:px-10">
     <div class="flex flex-row">
-      <h1 class="text-5xl max-w-md font-serif font-semibold">
-        Be good to people for no reason <div class="inline-block w-10 h-10 ml-1 transform translate-y-1">{% include icons/heart.svg %}</div>
+      <h1 class="max-w-md font-serif font-semibold">
+        Be good to people for no reason
+        <div class="inline-block w-10 h-10 ml-1 transform translate-y-1">
+          {% include icons/heart.svg %}
+        </div>
       </h1>
     </div>
 
-    <a class="block mt-12 text-2xl" href="mailto:info@paonogancho.pt">info@paonogancho.pt</a>
+    <a class="inline-block mt-12 text-2xl" href="mailto:info@paonogancho.pt"
+      >info@paonogancho.pt</a
+    >
   </div>
 
   <div class="h-full col-span-1 row-span-2 grid grid-rows-6">
     <div class="h-full row-span-1 bg-beige"></div>
-    <img class="h-full w-full row-span-4 object-cover sm:row-span-5" src="/images/coffeeshop.png" alt="People on a coffeeshop" />
+    <img
+      class="h-full w-full row-span-4 object-cover sm:row-span-5"
+      src="/images/coffeeshop.png"
+      alt="People on a coffeeshop"
+    />
     <div class="h-full row-span-1 bg-blue-light sm:hidden"></div>
   </div>
 
-  <img class="object-cover h-full w-full" src="/images/people.png" alt="People huddling together"/>
+  <img
+    class="object-cover h-full w-full"
+    src="/images/people.png"
+    alt="People huddling together"
+  />
 
   <div class="bg-teal h-full"></div>
 </div>

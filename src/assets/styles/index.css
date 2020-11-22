@@ -1,16 +1,2 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-  box-sizing: border-box;
-
-  line-height: 1.2;
-}
-
-html {
-  background: #222;
-  color: #eee;
-  font-family: "Work Sans", sans-serif;
-  font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
-}
+@import "./tailwind.css";
+@import "./defaults.css";
