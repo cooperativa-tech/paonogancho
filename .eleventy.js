@@ -1,3 +1,5 @@
+const lazyImagesPlugin = require("eleventy-plugin-lazyimages");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     // Templates:
@@ -14,6 +16,9 @@ module.exports = function (eleventyConfig) {
     "woff2",
   ]);
   eleventyConfig.addPassthroughCopy({ "src/static": "." });
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    transformImgPath: (src) => `./src/static/${src}`,
+  });
 
   return {
     dir: {
