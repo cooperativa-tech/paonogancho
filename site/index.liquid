@@ -2,39 +2,88 @@
 layout: layouts/base.liquid
 ---
 
+<ul class="flex justify-end font-bold text-xl space-x-88 mt-64">
+  <li><a>Como funciona</a></li>
+  <li><a>Como funciona</a></li>
+  <li><a>Como funciona</a></li>
+</ul>
+
+<h1 class="sr-only">pão no gancho</h1>
+<p class="sr-only">Oportunidades para todos.</p>
+
 <div
-  class="grid grid-cols-3 grid-rows-2 min-h-screen sm:grid-cols-2 sm:auto-rows-min"
+  class="flex flex-col mt-176 text-9xl font-serif"
+  aria-hidden="true"
+  style="font-size: 224px"
 >
-  <div class="py-24 px-20 bg-blue-dark col-span-2 sm:pt-16 sm:pb-32 sm:px-10">
-    <div class="flex flex-row">
-      <h1 class="max-w-md font-serif font-semibold">
-        Be good to people for no reason
-        <div class="inline-block w-10 h-10 ml-1 transform translate-y-1">
-          {% include icons/heart.svg %}
-        </div>
-      </h1>
-    </div>
+  <span>pão</span>
+  <span>no</span>
+  <span class="flex items-center">
+    <span>gancho</span>
 
-    <a class="inline-block mt-12 text-2xl" href="mailto:info@paonogancho.pt"
-      >info@paonogancho.pt</a
+    <span class="text-5xl font-sans max-w-6-col ml-column-spacing"
+      >Oportunidades para todos.</span
     >
-  </div>
+  </span>
+</div>
 
-  <div class="h-full col-span-1 row-span-2 grid grid-rows-6">
-    <div class="h-full row-span-1 bg-beige"></div>
-    <img
-      class="h-full w-full row-span-4 object-cover sm:row-span-5"
-      src="/images/coffeeshop.png"
-      alt="People on a coffeeshop"
-    />
-    <div class="h-full row-span-1 bg-blue-light sm:hidden"></div>
-  </div>
+<div class="p-80 mt-304 bg-blue rounded-3xl">
+  <p class="text-white font-serif text-5xl max-w-12-col">
+    O Pão no Gancho é um gesto que pode mudar de uma forma positiva o dia de uma
+    pessoa da sua rua, do seu bairro ou da sua cidade.
+  </p>
+</div>
 
-  <img
-    class="object-cover h-full w-full"
-    src="/images/people.png"
-    alt="People huddling together"
-  />
+<div class="max-w-10-col mx-auto mt-168 text-2xl">
+  <p>
+    Inspirado no movimento Caffè Sospenso, que surgiu há mais de 100 anos em
+    Nápoles, Itália, o <span class="font-bold">pão no gancho</span> trata-se de
+    uma ato bastante simples, quando for tomar café, em vez de pagar apenas o
+    seu, paga dois — o seu e um extra. Esse extra é colocado no gancho solidário
+    e poderá ser usado por uma pessoa que não tenha possibilidade de pagar o seu
+    próprio café.
+  </p>
+  <p class="mt-32">
+    Deixar um café pago é só um exemplo simples, com o
+    <span class="font-bold">pão no gancho</span>, esta ideia de deixar algo pago
+    para quem não tenha possibilidade de pagar, é transversal a qualquer coisa!
+    Um pão, uma refeição, uma caixa de comprimidos, entre muitas outras
+    coisas... que nós, enquanto comunidade queremos ou podemos contribuir.
+  </p>
+  <p class="mt-32">
+    O <span class="font-bold">pão no gancho</span> é um gesto que entra na vida
+    das pessoas para partilhar amor, esperança e força.
+  </p>
+</div>
 
-  <div class="bg-teal h-full sm:h-14"></div>
+<div class="flex justify-center mt-88 mx-auto" aria-label="Como funciona?">
+  {% include vectors/how_it_works.svg %}
+</div>
+
+<div class="max-w-10-col mx-auto">
+  <ul class="text-4xl space-y-56">
+    <li>
+      <p class="text-blue text-7xl font-serif">1.</p>
+      <p class="mt-16">Ao pagar um item, deixe mais um pago.</p>
+    </li>
+
+    <li>
+      <p class="text-red text-7xl font-serif">2.</p>
+      <p class="mt-16">Coloque o talão no gancho solidário.</p>
+    </li>
+
+    <li>
+      <p class="text-green text-7xl font-serif">3.</p>
+      <p class="mt-16">Quem precisar, retira o talão e utiliza.</p>
+    </li>
+  </ul>
+
+  <p class="max-w-9-col text-2xl mt-80">
+    E, assim, de uma forma tão simples, pode ter tornado o dia de uma pessoa que
+    vive na sua comunidade um bocadinho melhor.
+  </p>
+</div>
+
+<div class="flex justify-center mt-48 mx-auto" aria-label="Como funciona?">
+  {% include vectors/where_is_the_hook.svg %}
 </div>

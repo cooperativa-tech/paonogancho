@@ -1,3 +1,39 @@
+const baseSpacing = { 4: "4px" };
+for (let i = 0; i < 98; i += 2) {
+  baseSpacing[i * 4] = `${i * 4}px`;
+}
+const column = 54;
+const gutter = 28;
+const baseColumns = Array(18)
+  .fill()
+  .reduce(
+    (memo, _, index) => ({
+      ...memo,
+      [`${index + 1}-col`]: `${column * (index + 1) + gutter * index}px`,
+    }),
+    {},
+  );
+const columns = {
+  ...baseColumns,
+  "column-spacing": `${column + gutter * 2}px`,
+  none: "none",
+  0: "0",
+  "1/2": "50%",
+  "1/4": "25%",
+  "3/4": "75%",
+  full: "100%",
+  screen: "100vw",
+};
+
+function responsivify(minSize, maxSize) {
+  const minViewport = 320;
+  const maxViewport = 1280;
+
+  return `calc(${minSize}px + ${
+    maxSize - minSize
+  } *(100vw - ${minViewport}px)/${maxViewport})`;
+}
+
 module.exports = {
   purge: {
     mode: "all",
@@ -11,8 +47,8 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      sans: ["Work Sans", "sans-serif"],
-      serif: ["Playfair Display", "serif"],
+      sans: ["Libre Baskerville", "sans-serif"],
+      serif: ["Millik", "serif"],
     },
     screens: {
       sm: { max: "840px" },
@@ -20,15 +56,25 @@ module.exports = {
     scale: {
       101: "1.01",
     },
+    spacing: {
+      ...baseSpacing,
+      gutter: `${gutter}px`,
+      "column-spacing": columns["column-spacing"],
+    },
     colors: {
       white: "#FFFFFF",
-      beige: "#E6DCD4",
-      blue: {
-        dark: "#1F106B",
-        light: "#66DBF5",
-      },
-      teal: "#67D6C2",
+      beige: "#FFF9F3",
+      blue: "#4355FF",
+      red: "#FF3838",
+      green: "#6FCC58",
       white: "#FFFFFF",
+      black: "black",
+    },
+
+    extend: {
+      width: columns,
+      maxWidth: columns,
+      minWidth: columns,
     },
   },
 };
