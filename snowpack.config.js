@@ -1,7 +1,8 @@
 module.exports = {
   mount: {
     _output: "/",
-    src: "/_dist_",
+    static: "/",
+    assets: "/assets",
   },
   plugins: [
     "@snowpack/plugin-postcss",

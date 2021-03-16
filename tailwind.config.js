@@ -2,11 +2,11 @@ module.exports = {
   purge: {
     mode: "all",
     content: [
-      "./src/**/*.js",
-      "./src/**/*.njk",
-      "./src/**/*.liquid",
-      "./src/**/*.ts",
-      "./src/**/*.css",
+      "./{site,assets,static}/**/*.js",
+      "./{site,assets,static}/**/*.njk",
+      "./{site,assets,static}/**/*.liquid",
+      "./{site,assets,static}/**/*.ts",
+      "./{site,assets,static}/**/*.css",
     ],
   },
   theme: {
