@@ -4,8 +4,8 @@
     "dev": "NODE_ENV=development snowpack dev",
     "optimize-fonts": "subfont $(find build -name '*.html') --in-place --no-fallbacks --inline-fonts --inline-css --font-display block",
     "build": "NODE_ENV=production snowpack build && yarn optimize-fonts",
-    "format": "prettier --write \"src/**/*.js\" *.js \"src/**/*.css\"",
-    "lint": "prettier --check \"src/**/*.js\" *.js \"src/**/*.css\""
+    "format": "prettier --write \"assets/**/*.js\" *.js \"assets/**/*.css\"",
+    "lint": "prettier --check \"assets/**/*.js\" *.js \"assets/**/*.css\""
   },
   "dependencies": {},
   "devDependencies": {
