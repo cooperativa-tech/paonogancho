@@ -25,15 +25,6 @@ const columns = {
   screen: "100vw",
 };
 
-function responsivify(minSize, maxSize) {
-  const minViewport = 320;
-  const maxViewport = 1280;
-
-  return `calc(${minSize}px + ${
-    maxSize - minSize
-  } *(100vw - ${minViewport}px)/${maxViewport})`;
-}
-
 module.exports = {
   purge: {
     mode: "all",
@@ -69,6 +60,7 @@ module.exports = {
       green: "#6FCC58",
       white: "#FFFFFF",
       black: "black",
+      pink: "#FF7DD6",
     },
 
     extend: {
