@@ -41,6 +41,20 @@ module.exports = {
       sans: ["Libre Baskerville", "sans-serif"],
       serif: ["Millik", "serif"],
     },
+    fontSize: {
+      8: ["8px", "1.414"],
+      12: ["12px", "1.414"],
+      16: ["16px", "1.414"],
+      20: ["20px", "1.414"],
+      28: ["28px", "1.414"],
+      40: ["40px", "1.414"],
+      56: ["56px", "1.414"],
+      84: ["84px", "1.414"],
+      112: ["112px", "1.414"],
+      168: ["168px", "1.414"],
+      224: ["224px", "1.414"],
+      320: ["320px", "1.414"],
+    },
     screens: {
       sm: { max: "840px" },
     },
@@ -67,6 +81,9 @@ module.exports = {
       width: columns,
       maxWidth: columns,
       minWidth: columns,
+      borderRadius: {
+        "4xl": "50px",
+      },
     },
   },
 };

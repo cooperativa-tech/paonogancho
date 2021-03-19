@@ -13,28 +13,8 @@ html {
   font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 
-@layer base {
-  h1 {
-    @apply text-5xl;
-  }
-
-  h2 {
-    @apply text-4xl;
-  }
-
-  h3 {
-    @apply text-3xl;
-  }
-
-  h4 {
-    @apply text-2xl;
-  }
-
-  h5 {
-    @apply text-xl;
-  }
-
-  h6 {
-    @apply text-lg;
+@layer utilities {
+  .limit-width {
+    @apply px-gutter max-w-16-col mx-auto;
   }
 }
