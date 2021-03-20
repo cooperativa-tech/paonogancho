@@ -19,6 +19,6 @@ html {
   }
 
   .svg-header {
-    @apply flex w-7-col justify-center mt-88 mx-auto md:mt-40 md:w-5-col
+    @apply flex w-7-col justify-center mt-88 mx-auto md:mt-40 md:w-5-col;
   }
 }
