@@ -7,7 +7,7 @@ layout: layouts/base.liquid
   <p class="sr-only">Oportunidades para todos.</p>
 
   <div
-    class="flex flex-col mt-176 text-224 leading-none font-serif"
+    class="flex flex-col mt-176 text-224 leading-none font-serif xl:text-112 xl:leading-none sm:text-84 sm:leading-none"
     aria-hidden="true"
   >
     <span>pão</span>
@@ -15,22 +15,28 @@ layout: layouts/base.liquid
     <span class="flex items-center">
       <span>gancho</span>
 
-      <span class="text-40 font-sans max-w-6-col ml-column-spacing"
-        >Oportunidades para todos.</span
+      <span
+        class="text-40 xl:text-28 font-sans max-w-6-col xl:max-w-3-col ml-column-spacing 2xl:ml-32 md:hidden"
       >
+        Oportunidades para todos.
+      </span>
     </span>
+
+    <span class="hidden md:block text-20 max-w-2-col font-sans mt-24">Oportunidades para todos.</span>
   </div>
 </section>
 
-<section class="limit-width">
-  <div class="p-80 mt-304 bg-blue rounded-3xl">
-    <p class="text-white font-serif text-56 leading-none max-w-12-col">
+<section class="limit-width mt-224 md:mt-32">
+  <div class="p-80 bg-blue rounded-3xl md:p-24">
+    <p
+      class="text-white font-serif text-56 xl:text-40 leading-none xl:leading-none max-w-12-col md:text-20 md:leading-none"
+    >
       O Pão no Gancho é um gesto que pode mudar de uma forma positiva o dia de
       uma pessoa da sua rua, do seu bairro ou da sua cidade.
     </p>
   </div>
 
-  <div class="max-w-10-col mx-auto mt-168 text-28">
+  <div class="max-w-10-col mx-auto mt-168 text-28 xl:mt-80 xl:text-20 md:mt-56 md:text-16">
     <p>
       Inspirado no movimento Caffè Sospenso, que surgiu há mais de 100 anos em
       Nápoles, Itália, o
@@ -56,29 +62,29 @@ layout: layouts/base.liquid
 </section>
 
 <section id="como_funciona" class="limit-width">
-  <div class="flex justify-center mt-88 mx-auto" aria-label="Como funciona?">
+  <div class="svg-header" aria-label="Como funciona?">
     {% include vectors/how_it_works.svg %}
   </div>
 
   <div class="max-w-10-col mx-auto">
-    <ul class="text-40 space-y-56">
+    <ul class="text-40 space-y-56 xl:text-28 md:text-20 md:space-y-32">
       <li>
-        <p class="text-blue font-serif">1.</p>
+        <p class="text-blue text-56 leading-none font-serif">1.</p>
         <p class="mt-16">Ao pagar um item, deixe mais um pago.</p>
       </li>
 
       <li>
-        <p class="text-red font-serif">2.</p>
+        <p class="text-red text-56 leading-none font-serif">2.</p>
         <p class="mt-16">Coloque o talão no gancho solidário.</p>
       </li>
 
       <li>
-        <p class="text-green font-serif">3.</p>
+        <p class="text-green text-56 leading-none font-serif">3.</p>
         <p class="mt-16">Quem precisar, retira o talão e utiliza.</p>
       </li>
     </ul>
 
-    <p class="max-w-9-col text-28 mt-80">
+    <p class="text-28 mt-80 xl:text-20 md:text-16 md:mt-32">
       E, assim, de uma forma tão simples, pode ter tornado o dia de uma pessoa
       que vive na sua comunidade um bocadinho melhor.
     </p>
@@ -86,7 +92,7 @@ layout: layouts/base.liquid
 </section>
 
 <section>
-  <div class="flex justify-center mt-48 mx-auto" aria-label="Como funciona?">
+  <div class="svg-header" aria-label="Onde está o gancho?">
     {% include vectors/where_is_the_hook.svg %}
   </div>
 
@@ -96,29 +102,29 @@ layout: layouts/base.liquid
 </section>
 
 <section class="limit-width">
-  <div class="flex justify-center mt-48 mx-auto" aria-label="Seja parceiro">
+  <div class="svg-header md:max-w-4-col" aria-label="Seja parceiro">
     {% include vectors/be_partner.svg %}
   </div>
 
-  <div class="mt-112 mx-auto max-w-12-col">
-    <p class="text-40">
+  <div class="mt-112 mx-auto max-w-10-col">
+    <p class="text-40 xl:text-28 md:text-20">
       Tem um café, uma pastelaria, uma mercearia, ou outro tipo de
       estabelecimento comercial, e gostava de ter o
       <span class="font-bold font-serif">pão no gancho</span> no seu espaço?
     </p>
   </div>
 
-  <section class="max-w-14-col mx-auto mt-88">
-    <header class="text-56 font-serif mb-80">Seja bem-vindo!</header>
+  <section class="max-w-12-col mx-auto mt-88">
+    <header class="text-56 font-serif mb-80 sm:text-40">Seja bem-vindo!</header>
 
-    <div class="mb-56 ml-80">
-      <p class="text-40">O processo é bastante simples</p>
-      <p class="text-28 mt-32">
+    <div class="mb-56 ml-80 md:ml-0">
+      <p class="text-40 xl:text-28 md:text-20">O processo é bastante simples</p>
+      <p class="text-28 xl:text-20 md:text-16 mt-32">
         Ao registar o seu espaço na secção seguinte desta página, receberá um
         KIT que inclui:
       </p>
 
-      <ul class="ml-80 mt-56 text-28 space-y-56">
+      <ul class="ml-80 xl:ml-0 mt-56 text-28 space-y-56 xl:text-20 md:text-16">
         <li class="flex flex-row items-start space-x-24">
           <svg
             style="min-width: 54px"
@@ -180,19 +186,21 @@ layout: layouts/base.liquid
   </section>
 </section>
 
-<section id="seja_parceiro" class="limit-width">
-  <div class="flex justify-center mt-48 mx-auto" aria-label="Faça o registo">
+<section id="seja_parceiro" class="limit-width mt-40">
+  <div class="svg-header" aria-label="Faça o registo">
     {% include vectors/register.svg %}
   </div>
 
-  <div class="max-w-16-col bg-blue text-white rounded-3xl p-184">
-    <p class="text-40">
+  <div
+    class="max-w-16-col bg-blue text-white rounded-3xl p-184 px-112 xl:px-80 md:px-24 md:py-48"
+  >
+    <p class="text-40 xl:text-28 md:px-24">
       O <span class="font-bold font-serif">pão no gancho</span> começa com a
       adesão de estabelecimentos como o seu. Faça parte da nossa comunidade e
       ajude-nos a alimentar quem mais precisa.
     </p>
 
-    <form class="flex flex-col items-center mt-80">
+    <form class="flex flex-col items-center mt-80 md:mt-48">
       <div class="flex flex-col space-y-24 text-black w-full">
         <input class="h-80 rounded-3xl px-40 py-28" placeholder="Nome *" />
         <input class="h-80 rounded-3xl px-40 py-28" placeholder="Email *" />
@@ -213,7 +221,7 @@ layout: layouts/base.liquid
       </div>
 
       <button
-        class="bg-pink rounded-3xl text-40 leading-none py-16 px-40 font-serif mt-56"
+        class="bg-pink rounded-3xl text-40 xl:text-28 leading-none xl:leading-none py-16 px-40 font-serif mt-56"
       >
         Registar
       </button>
@@ -222,11 +230,11 @@ layout: layouts/base.liquid
 </section>
 
 <section id="como_surgiu" class="limit-width mt-168">
-  <header class="flex justify-center mb-80 mx-auto" aria-label="Como surgiu?">
+  <header class="svg-header mb-40" aria-label="Como surgiu?">
     {% include vectors/how_it_appears.svg %}
   </header>
 
-  <div class="space-y-40 text-28 max-w-10-col mx-auto">
+  <div class="space-y-40 text-28 max-w-10-col mx-auto xl:text-20 md:text-16">
     <p>
       O <span class="font-bold font-serif">pão no gancho</span> surge com a
       chegada de Anja e Michael à cidade de Braga. Um casal alemão que decidiu
@@ -266,10 +274,12 @@ layout: layouts/base.liquid
   </div>
 </section>
 
-<section class="limit-width rounded-4xl bg-red text-white mb-80">
-  <div class="px-88 pt-192 pb-88 flex flex-row items-end">
+<section class="limit-width mb-80">
+  <div
+    class="px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64"
+  >
     <div
-      class="flex flex-col text-112 leading-none font-serif"
+      class="flex flex-col text-112 leading-none font-serif xl:text-84 xl:leading-none md:text-56 md:leading-none"
       aria-hidden="true"
     >
       <span>pão</span>
@@ -279,7 +289,7 @@ layout: layouts/base.liquid
       </span>
     </div>
 
-    <div class="ml-120">
+    <div class="ml-120 xl:ml-0 xl:mt-256">
       <div class="flex flex-row space-x-24">
         <a class="flex justify-center" href="#" aria-label="Facebook page">
           {% include icons/facebook.svg %}
@@ -290,7 +300,7 @@ layout: layouts/base.liquid
         </div>
       </div>
 
-      <a class="block text-40 font-sans mt-24" href="mailto:info@paonogancho.pt"
+      <a class="block text-40 md:text-16 font-sans mt-24" href="mailto:info@paonogancho.pt"
         >info@paonogancho.pt</a
       >
     </div>
