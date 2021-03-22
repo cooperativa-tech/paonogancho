@@ -52,7 +52,7 @@ html {
   }
 
   .input {
-    @apply rounded-3xl px-40 py-24 border-2 border-transparent text-20 md:py-16 sm:py-8 sm:text-12;
+    @apply rounded-3xl px-40 py-24 border-2 border-transparent text-20 md:rounded-xl md:px-32 sm:px-16 md:py-16 sm:py-8 sm:text-12;
   }
 
   .input::placeholder {
