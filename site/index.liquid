@@ -7,7 +7,8 @@ layout: layouts/base.liquid
   <p class="sr-only">Oportunidades para todos.</p>
 
   <div
-    class="flex flex-col mt-176 text-224 leading-none font-serif xl:text-112 xl:leading-none sm:text-84 sm:leading-none"
+    class="flex flex-col mt-128 text-224 font-serif xl:text-112 sm:text-84"
+    style="line-height: 0.8"
     aria-hidden="true"
   >
     <span>pão</span>
@@ -28,40 +29,44 @@ layout: layouts/base.liquid
   </div>
 </section>
 
-<section class="limit-width mt-224 md:mt-32">
-  <div class="p-80 bg-blue rounded-3xl md:p-24">
-    <p
-      class="text-white font-serif text-56 xl:text-40 leading-none xl:leading-none max-w-12-col md:text-20 md:leading-none"
-    >
-      O Pão no Gancho é um gesto que pode mudar de uma forma positiva o dia de
-      uma pessoa da sua rua, do seu bairro ou da sua cidade.
-    </p>
+<section class="mt-224 md:mt-32 sm:px-8">
+  <div class="limit-width-no-sm">
+    <div class="p-80 bg-blue rounded-3xl md:p-24">
+      <p
+        class="text-white font-serif text-56 xl:text-40 leading-none xl:leading-none max-w-12-col md:text-20 md:leading-none"
+      >
+        O Pão no Gancho é um gesto que pode mudar de uma forma positiva o dia de
+        uma pessoa da sua rua, do seu bairro ou da sua cidade.
+      </p>
+    </div>
   </div>
 
-  <div
-    class="max-w-10-col mx-auto mt-168 text-28 xl:mt-80 xl:text-20 md:mt-56 md:text-16"
-  >
-    <p>
-      Inspirado no movimento Caffè Sospenso, que surgiu há mais de 100 anos em
-      Nápoles, Itália, o
-      <span class="font-bold font-serif">pão no gancho</span> trata-se de uma
-      ato bastante simples, quando for tomar café, em vez de pagar apenas o seu,
-      paga dois — o seu e um extra. Esse extra é colocado no gancho solidário e
-      poderá ser usado por uma pessoa que não tenha possibilidade de pagar o seu
-      próprio café.
-    </p>
-    <p class="mt-32">
-      Deixar um café pago é só um exemplo simples, com o
-      <span class="font-bold font-serif">pão no gancho</span>, esta ideia de
-      deixar algo pago para quem não tenha possibilidade de pagar, é transversal
-      a qualquer coisa! Um pão, uma refeição, uma caixa de comprimidos, entre
-      muitas outras coisas... que nós, enquanto comunidade queremos ou podemos
-      contribuir.
-    </p>
-    <p class="mt-32">
-      O <span class="font-bold font-serif">pão no gancho</span> é um gesto que
-      entra na vida das pessoas para partilhar amor, esperança e força.
-    </p>
+  <div class="limit-width">
+    <div
+      class="max-w-10-col mx-auto mt-168 text-28 xl:mt-80 xl:text-20 md:mt-56 md:text-16"
+    >
+      <p>
+        Inspirado no movimento Caffè Sospenso, que surgiu há mais de 100 anos em
+        Nápoles, Itália, o
+        <span class="hook">pão no gancho</span> trata-se de uma ato bastante
+        simples, quando for tomar café, em vez de pagar apenas o seu, paga dois
+        — o seu e um extra. Esse extra é colocado no gancho solidário e poderá
+        ser usado por uma pessoa que não tenha possibilidade de pagar o seu
+        próprio café.
+      </p>
+      <p class="mt-32">
+        Deixar um café pago é só um exemplo simples, com o
+        <span class="hook">pão no gancho</span>, esta ideia de deixar algo pago
+        para quem não tenha possibilidade de pagar, é transversal a qualquer
+        coisa! Um pão, uma refeição, uma caixa de comprimidos, entre muitas
+        outras coisas... que nós, enquanto comunidade queremos ou podemos
+        contribuir.
+      </p>
+      <p class="mt-32">
+        O <span class="hook">pão no gancho</span> é um gesto que entra na vida
+        das pessoas para partilhar amor, esperança e força.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -116,7 +121,7 @@ layout: layouts/base.liquid
 </section>
 
 <section class="limit-width">
-  <div class="svg-header md:max-w-4-col" aria-label="Seja parceiro">
+  <div class="svg-header md:max-w-3-col" aria-label="Seja parceiro">
     {% include vectors/be_partner.svg %}
   </div>
 
@@ -124,12 +129,14 @@ layout: layouts/base.liquid
     <p class="text-40 xl:text-28 md:text-20">
       Tem um café, uma pastelaria, uma mercearia, ou outro tipo de
       estabelecimento comercial, e gostava de ter o
-      <span class="font-bold font-serif">pão no gancho</span> no seu espaço?
+      <span class="hook">pão no gancho</span> no seu espaço?
     </p>
   </div>
 
   <section class="max-w-12-col mx-auto mt-88">
-    <header class="text-56 font-serif mb-80 sm:text-40">Seja bem-vindo!</header>
+    <header class="text-56 font-serif mb-80 sm:text-40 sm:mb-40">
+      Seja bem-vindo!
+    </header>
 
     <div class="mb-56 ml-80 md:ml-0">
       <p class="text-40 xl:text-28 md:text-20">O processo é bastante simples</p>
@@ -139,7 +146,9 @@ layout: layouts/base.liquid
       </p>
 
       <ul class="ml-80 xl:ml-0 mt-56 text-28 space-y-56 xl:text-20 md:text-16">
-        <li class="flex flex-row items-start space-x-24">
+        <li
+          class="flex flex-row items-start space-x-24 sm:flex-col sm:space-x-0 sm:space-y-16"
+        >
           <svg
             style="min-width: 54px"
             width="54"
@@ -157,7 +166,9 @@ layout: layouts/base.liquid
           </p>
         </li>
 
-        <li class="flex flex-row items-start space-x-24">
+        <li
+          class="flex flex-row items-start space-x-24 sm:flex-col sm:space-x-0 sm:space-y-16"
+        >
           <svg
             style="min-width: 54px"
             width="54"
@@ -175,7 +186,9 @@ layout: layouts/base.liquid
           <p>o gancho solidário;</p>
         </li>
 
-        <li class="flex flex-row items-start space-x-24">
+        <li
+          class="flex flex-row items-start space-x-24 sm:flex-col sm:space-x-0 sm:space-y-16"
+        >
           <svg
             style="min-width: 54px"
             width="54"
@@ -208,30 +221,26 @@ layout: layouts/base.liquid
   <div
     class="max-w-16-col bg-blue text-white rounded-3xl p-184 px-112 xl:px-80 md:px-24 md:py-48"
   >
-    <p class="text-40 xl:text-28 md:px-24">
-      O <span class="font-bold font-serif">pão no gancho</span> começa com a
-      adesão de estabelecimentos como o seu. Faça parte da nossa comunidade e
-      ajude-nos a alimentar quem mais precisa.
+    <p class="text-40 xl:text-28 md:px-24 sm:text-20 sm:px-0">
+      O <span class="hook">pão no gancho</span> começa com a adesão de
+      estabelecimentos como o seu. Faça parte da nossa comunidade e ajude-nos a
+      alimentar quem mais precisa.
     </p>
 
-    <form class="flex flex-col items-center mt-80 md:mt-48">
+    <form class="flex flex-col items-center mt-80 md:mt-48" data-netlify="true" netlify-honeypot="bot-field">
+      <p class="hidden">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </p>
       <div class="flex flex-col space-y-24 text-black w-full">
-        <input class="h-80 rounded-3xl px-40 py-28" placeholder="Nome *" />
-        <input class="h-80 rounded-3xl px-40 py-28" placeholder="Email *" />
-
-        <input
-          class="h-80 rounded-3xl px-40 py-28"
-          placeholder="Nome do Espaço*"
-        />
-        <input class="h-80 rounded-3xl px-40 py-28" placeholder="Facebook*" />
-        <input class="h-80 rounded-3xl px-40 py-28" placeholder="Instagram*" />
-
-        <input class="h-80 rounded-3xl px-40 py-28" placeholder="Morada*" />
-
-        <textarea
-          class="h-80 rounded-3xl px-40 py-28"
-          placeholder="Observações/Questões *"
-        ></textarea>
+        <input class="input" name="name" placeholder="Nome*" />
+        <input class="input" name="email" placeholder="Email*" />
+        <div class="grid grid-flow-row grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-24">
+          <input class="input xl:col-span-2 md:col-span-1" name="space_name" placeholder="Nome do Espaço*" />
+          <input class="input" name="facebook" placeholder="Facebook*" />
+          <input class="input" name="instagram" placeholder="Instagram*" />
+        </div>
+        <input class="input" name="address" placeholder="Morada*" />
+        <textarea class="input h-224 sm:h-88" name="questions" placeholder="Observações/Questões *"></textarea>
       </div>
 
       <button
@@ -250,9 +259,9 @@ layout: layouts/base.liquid
 
   <div class="space-y-40 text-28 max-w-10-col mx-auto xl:text-20 md:text-16">
     <p>
-      O <span class="font-bold font-serif">pão no gancho</span> surge com a
-      chegada de Anja e Michael à cidade de Braga. Um casal alemão que decidiu
-      trocar a sua vida em Munique por uma nova vida na cidade de Braga.
+      O <span class="hook">pão no gancho</span> surge com a chegada de Anja e
+      Michael à cidade de Braga. Um casal alemão que decidiu trocar a sua vida
+      em Munique por uma nova vida na cidade de Braga.
     </p>
 
     <p>
@@ -275,22 +284,22 @@ layout: layouts/base.liquid
   </div>
 </section>
 
-<section class="limit-width mt-168 mb-216">
+<section class="limit-width mt-168 mb-216 sm:my-112">
   <header class="font-serif text-40 leading-none text-center">
     Powered by
   </header>
 
-  <div class="max-w-12-col flex flex-row justify-between mx-auto mt-56">
-    <div>Subvisual</div>
-    <div>You had a problem</div>
-    <div>Onda</div>
-    <div>Finiam</div>
+  <div
+    class="max-w-12-col flex flex-row justify-between mx-auto mt-56 md:flex-col md:space-y-24 md:items-center"
+  >
+    {% include vectors/subvisual.svg %} {% include vectors/you_had_a_problem.svg
+    %} {% include vectors/onda.svg %} {% include vectors/finiam.svg %}
   </div>
 </section>
 
 <section class="limit-width mb-80">
   <div
-    class="px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64"
+    class="px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64 sm:px-24"
   >
     <div
       class="flex flex-col text-112 leading-none font-serif xl:text-84 xl:leading-none md:text-56 md:leading-none"

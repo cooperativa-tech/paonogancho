@@ -42,18 +42,18 @@ module.exports = {
       serif: ["Millik", "serif"],
     },
     fontSize: {
-      8: ["8px", "1.7"],
-      12: ["12px", "1.7"],
-      16: ["16px", "1.7"],
-      20: ["20px", "1.7"],
-      28: ["28px", "1.7"],
-      40: ["40px", "1.7"],
-      56: ["56px", "1.7"],
-      84: ["84px", "1.7"],
-      112: ["112px", "1.7"],
-      168: ["168px", "1.7"],
-      224: ["224px", "1.7"],
-      320: ["320px", "1.7"],
+      8: ["8px", "1.5"],
+      12: ["12px", "1.5"],
+      16: ["16px", "1.5"],
+      20: ["20px", "1.5"],
+      28: ["28px", "1.5"],
+      40: ["40px", "1.5"],
+      56: ["56px", "1.5"],
+      84: ["84px", "1.5"],
+      112: ["112px", "1.5"],
+      168: ["168px", "1.5"],
+      224: ["224px", "1.5"],
+      320: ["320px", "1.5"],
     },
     screens: {
       "2xl": { max: "1535px" },
@@ -68,6 +68,7 @@ module.exports = {
     spacing: {
       ...baseSpacing,
       gutter: `${gutter}px`,
+      "half-gutter": `${gutter / 2}px`,
       "column-spacing": columns["column-spacing"],
     },
     colors: {
@@ -79,6 +80,7 @@ module.exports = {
       white: "#FFFFFF",
       black: "black",
       pink: "#FF7DD6",
+      transparent: "transparent",
     },
 
     extend: {

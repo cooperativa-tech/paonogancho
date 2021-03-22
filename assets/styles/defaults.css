@@ -1,4 +1,21 @@
 * {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1,
+    "dlig" 1, "swsh" 1;
+  -moz-font-feature-settings: "smcp=1, onum=1, frac=1, kern=1, liga=1, dlig=1, swsh=1";
+  -ms-font-feature-settings: "smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1,
+    "dlig" 1, "swsh" 1;
+  -o-font-feature-settings: "smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1,
+    "dlig" 1, "swsh" 1;
+  -webkit-font-feature-settings: "smcp" 1, "onum" 1, "frac" 1, "kern" 1,
+    "liga" 1, "dlig" 1, "swsh" 1;
+  font-feature-settings: "smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1,
+    "dlig" 1, "swsh" 1;
+  font-feature-settings: normal;
+
   box-sizing: border-box;
 }
 
@@ -18,7 +35,32 @@ html {
     @apply px-80 max-w-16-col mx-auto md:px-gutter;
   }
 
+  @media (min-width: 640px) {
+    .limit-width-no-sm {
+      @apply px-80 max-w-16-col mx-auto md:px-gutter;
+    }
+  }
+
   .svg-header {
-    @apply flex w-7-col justify-center mt-88 mx-auto md:mt-40 md:w-5-col;
+    @apply flex w-7-col justify-center mt-88 mx-auto xl:w-6-col md:mt-40 md:w-5-col sm:w-3-col;
+  }
+
+  .hook {
+    @apply font-bold font-serif;
+
+    font-size: 105%;
+  }
+
+  .input {
+    @apply rounded-3xl px-40 py-24 border-2 border-transparent text-20 md:py-16 sm:py-8 sm:text-12;
+  }
+
+  .input::placeholder {
+    @apply text-20 text-blue sm:text-12;
+  }
+
+  .input:focus {
+    @apply border-black;
+    outline: none;
   }
 }
