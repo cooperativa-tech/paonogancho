@@ -10,69 +10,10 @@
     <meta name="keywords" content="{{ metadata.keywords }}" />
 
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-
-    <script>
-      window.toggleMenu = () => {
-        document.querySelector("#navigation_menu").classList.toggle("hidden");
-        document.body.classList.toggle("overflow-hidden");
-      }
-    </script>
   </head>
 
   <body class="bg-beige">
-    <nav class="limit-width sm:sr-only">
-      <ul class="flex justify-end font-bold text-20 space-x-88 mt-64 md:space-x-48">
-        <li><a href="#como_funciona">Como funciona?</a></li>
-        <li><a href="#seja_parceiro">Seja parceiro</a></li>
-        <li><a href="#como_surgiu">Como surgiu?</a></li>
-      </ul>
-    </nav>
-
-    <div class="fixed left-0 top-0 bg-beige w-full hidden sm:block">
-      <button class="block m-16 mr-16 ml-auto" aria-hidden="true" onclick="window.toggleMenu()">
-        {% include icons/hamburguer.svg %}
-      </button>
-    </div>
-
-    <div class="hidden sm:block" style="height: 72px;"></div>
-
-    <div class="hidden fixed w-full h-full top-0 left-0 bg-beige z-50 p-32" id="navigation_menu">
-      <div class="flex flex-col h-full">
-        <button class="fixed top-16 right-16" onclick="window.toggleMenu()">
-          {% include icons/close.svg %}
-        </button>
-
-        <a href="#" >
-          <div class="flex flex-col text-28 font-serif" style="line-height: 0.8">
-            <span>pão</span>
-            <span>no</span>
-            <span>gancho</span>
-          </div>
-        </a>
-
-        <ul class="flex flex-col font-bold text-28 leading-none space-y-48 mt-96">
-          <li><a href="#como_funciona" onclick="window.toggleMenu()">Como funciona?</a></li>
-          <li><a href="#seja_parceiro" onclick="window.toggleMenu()">Seja parceiro</a></li>
-          <li><a href="#como_surgiu" onclick="window.toggleMenu()">Como surgiu?</a></li>
-        </ul>
-
-        <div class="mt-auto">
-          <div class="flex flex-row space-x-24">
-            <a class="flex justify-center w-32 text-black" href="#" aria-label="Facebook page">
-              {% include icons/facebook.svg %}
-            </a>
-
-            <a class="flex justify-center w-32 text-black" href="#" aria-label="Instagram page">
-              {% include icons/instagram.svg %}
-            </div>
-          </div>
-
-          <a class="text-16" href="mailto:info@paonogancho.pt">
-            info@paonogancho.pt
-          </a>
-        </div>
-      </div>
-    </div>
+    {% include components/navbar.liquid %}
 
     <main>
       {{ content | safe }}
