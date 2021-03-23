@@ -1,9 +1,7 @@
-const glob = require("glob");
-
 module.exports = {
   mount: {
-    _output: "/",
-    static: "/",
+    _output: { url: "/", static: true },
+    static: { url: "/", static: true },
     assets: "/assets",
   },
   plugins: [
@@ -15,7 +13,6 @@ module.exports = {
     open: "none",
   },
   optimize: {
-    entrypoints: glob.sync(__dirname + "/_output/**/*.html"),
     bundle: true,
     minify: true,
     target: "es2017",
