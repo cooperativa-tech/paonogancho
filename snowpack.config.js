@@ -15,7 +15,7 @@ module.exports = {
     open: "none",
   },
   optimize: {
-    entrypoints: glob.sync("./_output/**/*.html"),
+    entrypoints: glob.sync(__dirname + "/_output/**/*.html"),
     bundle: true,
     minify: true,
     target: "es2017",
