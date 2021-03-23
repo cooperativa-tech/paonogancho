@@ -7,10 +7,14 @@ module.exports = {
   plugins: [
     "@snowpack/plugin-postcss",
     ["@snowpack/plugin-run-script", { cmd: "eleventy", watch: "$1 --watch" }],
-    "@snowpack/plugin-webpack",
   ],
   devOptions: {
     hmrDelay: 300,
     open: "none",
+  },
+  optimize: {
+    bundle: true,
+    minify: true,
+    target: "es2017",
   },
 };
