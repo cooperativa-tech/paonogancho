@@ -1,3 +1,5 @@
+const glob = require("glob");
+
 module.exports = {
   mount: {
     _output: "/",
@@ -13,6 +15,7 @@ module.exports = {
     open: "none",
   },
   optimize: {
+    entrypoints: glob.sync("./_output/**/*.html"),
     bundle: true,
     minify: true,
     target: "es2017",
