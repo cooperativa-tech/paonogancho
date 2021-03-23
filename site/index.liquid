@@ -7,7 +7,7 @@ layout: layouts/base.liquid
   <p class="sr-only">Oportunidades para todos.</p>
 
   <div
-    class="flex flex-col mt-128 text-224 font-serif xl:text-112 sm:text-84"
+    class="flex flex-col mt-128 text-224 font-serif xl:text-112 sm:text-66 sm:mt-48"
     style="line-height: 0.8"
     aria-hidden="true"
   >
@@ -23,9 +23,9 @@ layout: layouts/base.liquid
       </span>
     </span>
 
-    <span class="hidden md:block text-20 max-w-2-col font-sans mt-24"
-      >Oportunidades para todos.</span
-    >
+    <span class="hidden md:block text-20 max-w-2-col font-sans mt-24 md:mt-32">
+      Oportunidades para todos.
+    </span>
   </div>
 </section>
 
@@ -48,7 +48,8 @@ layout: layouts/base.liquid
       <p>
         Inspirado no movimento Caffè Sospenso, que surgiu há mais de 100 anos em
         Nápoles, Itália, o
-        <span class="hook">pão no gancho</span> <span class="whitespace-nowrap">trata-se</span> de uma ato bastante
+        <span class="hook">pão no gancho</span>
+        <span class="whitespace-nowrap">trata-se</span> de uma ato bastante
         simples, quando for tomar café, em vez de pagar apenas o seu, paga dois
         — o seu e um extra. Esse extra é colocado no gancho solidário e poderá
         ser usado por uma pessoa que não tenha possibilidade de pagar o seu
@@ -227,20 +228,36 @@ layout: layouts/base.liquid
       alimentar quem mais precisa.
     </p>
 
-    <form class="flex flex-col items-center mt-80 md:mt-48" data-netlify="true" netlify-honeypot="bot-field">
+    <form
+      class="flex flex-col items-center mt-80 md:mt-48"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
       <p class="hidden">
-        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        <label
+          >Don’t fill this out if you’re human: <input name="bot-field"
+        /></label>
       </p>
       <div class="flex flex-col space-y-24 text-black w-full">
         <input class="input" name="name" placeholder="Nome*" />
         <input class="input" name="email" placeholder="Email*" />
-        <div class="grid grid-flow-row grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-24">
-          <input class="input xl:col-span-2 md:col-span-1" name="space_name" placeholder="Nome do Espaço*" />
+        <div
+          class="grid grid-flow-row grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-24"
+        >
+          <input
+            class="input xl:col-span-2 md:col-span-1"
+            name="space_name"
+            placeholder="Nome do Espaço*"
+          />
           <input class="input" name="facebook" placeholder="Facebook*" />
           <input class="input" name="instagram" placeholder="Instagram*" />
         </div>
         <input class="input" name="address" placeholder="Morada*" />
-        <textarea class="input h-224 sm:h-88" name="questions" placeholder="Observações/Questões *"></textarea>
+        <textarea
+          class="input h-224 sm:h-88"
+          name="questions"
+          placeholder="Observações/Questões *"
+        ></textarea>
       </div>
 
       <button
@@ -252,7 +269,7 @@ layout: layouts/base.liquid
   </div>
 </section>
 
-<section id="como_surgiu" class="limit-width mt-168">
+<section id="como_surgiu" class="limit-width mt-168 sm:mt-112">
   <header class="svg-header mb-40" aria-label="Como surgiu?">
     {% include vectors/how_it_appears.svg %}
   </header>
@@ -318,7 +335,7 @@ layout: layouts/base.liquid
           {% include icons/facebook.svg %}
         </a>
 
-        <div class="flex justify-center" href="#" aria-label="Instagram page">
+        <a class="flex justify-center" href="#" aria-label="Instagram page">
           {% include icons/instagram.svg %}
         </div>
       </div>
