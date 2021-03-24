@@ -35,9 +35,13 @@ html {
     @apply px-80 max-w-16-col mx-auto md:px-gutter;
   }
 
+  .limit-width-large {
+    @apply max-w-18-col mx-auto px-80 md:px-gutter;
+  }
+
   @media (min-width: 640px) {
-    .limit-width-no-sm {
-      @apply px-80 max-w-16-col mx-auto md:px-gutter;
+    .limit-width-large-no-sm {
+      @apply max-w-18-col mx-auto px-80 md:px-gutter;
     }
   }
 
