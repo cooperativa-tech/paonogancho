@@ -2,18 +2,26 @@
   window.toggleMenu = () => {
     document.querySelector("#navigation_menu").classList.toggle("hidden");
     document.body.classList.toggle("overflow-hidden");
-  }
+  };
+
+  window.onscroll = function (event) {
+    const isScrollingUp = this.oldScroll > this.scrollY;
+    this.oldScroll = this.scrollY;
+
+    if (isScrollingUp) document.querySelector("#navigation_bar").classList.remove("sm:-translate-y-full");
+    else document.querySelector("#navigation_bar").classList.add("sm:-translate-y-full");
+  };
 </script>
 
-<nav class="limit-width sm:sr-only">
-  <ul class="flex justify-end font-bold text-20 space-x-88 mt-64 md:space-x-48">
+<nav class="max-w-18-col mx-auto px-80 md:px-gutter sm:sr-only">
+  <ul class="flex justify-end font-bold text-20 space-x-88 mt-64 whitespace-nowrap xl:space-x-48">
     <li><a href="#como_funciona">Como funciona?</a></li>
     <li><a href="#seja_parceiro">Seja parceiro</a></li>
     <li><a href="#como_surgiu">Como surgiu?</a></li>
   </ul>
 </nav>
 
-<div class="fixed left-0 top-0 bg-beige w-full hidden sm:block">
+<div id="navigation_bar" class="fixed hidden left-0 top-0 bg-beige w-full z-50 transition-transform transform sm:block">
   <button
     class="block m-16 mr-16 ml-auto"
     aria-hidden="true"

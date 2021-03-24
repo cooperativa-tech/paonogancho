@@ -2,7 +2,7 @@
 layout: layouts/base.liquid
 ---
 
-<section class="limit-width">
+<section class="max-w-18-col mx-auto px-80 md:px-gutter">
   <h1 class="sr-only">pão no gancho</h1>
   <p class="sr-only">Oportunidades para todos.</p>
 
@@ -13,7 +13,7 @@ layout: layouts/base.liquid
   >
     <span>pão</span>
     <span>no</span>
-    <span class="flex items-center">
+    <span class="flex items-center justify-between xl:justify-start">
       <span>gancho</span>
 
       <span
@@ -101,8 +101,11 @@ layout: layouts/base.liquid
   </div>
 </section>
 
-<section>
-  <div class="svg-header" aria-label="Onde está o gancho?">
+<section class="relative mt-352 sm:mt-288">
+  <div
+    class="svg-header absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-3/4 md:-translate-y-3/4 sm:-translate-y-288 sm:max-ww-4-col z-10"
+    aria-label="Onde está o gancho?"
+  >
     {% include vectors/where_is_the_hook.svg %}
   </div>
 
@@ -157,6 +160,7 @@ layout: layouts/base.liquid
             viewBox="0 0 55 55"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="transform -translate-y-4 xl:-translate-y-1/4"
           >
             <circle cx="27.2006" cy="27.2006" r="27.2006" fill="#FF3838" />
           </svg>
@@ -177,6 +181,7 @@ layout: layouts/base.liquid
             viewBox="0 0 54 56"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="transform -translate-y-4 xl:-translate-y-1/4"
           >
             <path
               d="M22.2347 2.95051C24.9043 0.231304 29.2854 0.231304 31.9549 2.95051C33.5133 4.53786 35.7486 5.26417 37.9424 4.89596C41.7004 4.26519 45.2448 6.84033 45.8061 10.6093C46.1339 12.8095 47.5154 14.711 49.5066 15.7026C52.9177 17.4012 54.2715 21.5678 52.5103 24.947C51.4822 26.9196 51.4822 29.27 52.5103 31.2426C54.2715 34.6218 52.9177 38.7884 49.5066 40.487C47.5154 41.4786 46.1339 43.3801 45.8061 45.5803C45.2448 49.3493 41.7004 51.9244 37.9424 51.2937C35.7486 50.9254 33.5133 51.6517 31.9549 53.2391C29.2854 55.9583 24.9043 55.9583 22.2347 53.2391C20.6764 51.6517 18.441 50.9254 16.2473 51.2937C12.4892 51.9244 8.94486 49.3493 8.38347 45.5803C8.05575 43.3801 6.67423 41.4786 4.68301 40.487C1.27196 38.7884 -0.0818758 34.6218 1.67931 31.2426C2.70741 29.27 2.70741 26.9196 1.67931 24.947C-0.0818758 21.5678 1.27196 17.4012 4.68301 15.7026C6.67423 14.711 8.05575 12.8095 8.38347 10.6093C8.94486 6.84033 12.4892 4.26519 16.2473 4.89596C18.441 5.26417 20.6764 4.53786 22.2347 2.95051Z"
@@ -197,6 +202,7 @@ layout: layouts/base.liquid
             viewBox="0 0 54 53"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="transform -translate-y-4 xl:-translate-y-1/4"
           >
             <path
               d="M21.3753 2.08661C24.7292 -0.350171 29.2708 -0.350173 32.6247 2.08661L49.907 14.6429C53.2609 17.0797 54.6643 21.399 53.3832 25.3418L46.782 45.6582C45.5009 49.601 41.8267 52.2705 37.681 52.2705H16.319C12.1733 52.2705 8.49908 49.601 7.21798 45.6582L0.616764 25.3418C-0.66433 21.399 0.739096 17.0797 4.09304 14.6429L21.3753 2.08661Z"
@@ -239,8 +245,13 @@ layout: layouts/base.liquid
         /></label>
       </p>
       <div class="flex flex-col space-y-24 text-black w-full">
-        <input class="input" name="name" placeholder="Nome*" />
-        <input class="input" name="email" placeholder="Email*" />
+        <input class="input" name="name" placeholder="Nome*" required="true" />
+        <input
+          class="input"
+          name="email"
+          placeholder="Email*"
+          required="true"
+        />
         <div
           class="grid grid-flow-row grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-24"
         >
@@ -248,15 +259,21 @@ layout: layouts/base.liquid
             class="input xl:col-span-2 md:col-span-1"
             name="space_name"
             placeholder="Nome do Espaço*"
+            required="true"
           />
-          <input class="input" name="facebook" placeholder="Facebook*" />
-          <input class="input" name="instagram" placeholder="Instagram*" />
+          <input class="input" name="facebook" placeholder="Facebook" />
+          <input class="input" name="instagram" placeholder="Instagram" />
         </div>
-        <input class="input" name="address" placeholder="Morada*" />
+        <input
+          class="input"
+          name="address"
+          placeholder="Morada*"
+          required="true"
+        />
         <textarea
           class="input h-224 sm:h-88"
           name="questions"
-          placeholder="Observações/Questões *"
+          placeholder="Observações/Questões"
         ></textarea>
       </div>
 
@@ -319,8 +336,9 @@ layout: layouts/base.liquid
     class="px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64 sm:px-24"
   >
     <div
-      class="flex flex-col text-112 leading-none font-serif xl:text-84 xl:leading-none md:text-56 md:leading-none"
+      class="flex flex-col text-112 font-serif xl:text-84 md:text-56"
       aria-hidden="true"
+      style="line-height: 0.8"
     >
       <span>pão</span>
       <span>no</span>
@@ -329,7 +347,7 @@ layout: layouts/base.liquid
       </span>
     </div>
 
-    <div class="ml-120 xl:ml-0 xl:mt-256">
+    <div class="ml-120 xl:ml-0 xl:mt-256 flex flex-col">
       <div class="flex flex-row space-x-24">
         <a class="flex justify-center" href="#" aria-label="Facebook page">
           {% include icons/facebook.svg %}
@@ -337,7 +355,7 @@ layout: layouts/base.liquid
 
         <a class="flex justify-center" href="#" aria-label="Instagram page">
           {% include icons/instagram.svg %}
-        </div>
+        </a>
       </div>
 
       <a
