@@ -2,7 +2,7 @@
 layout: layouts/base.liquid
 ---
 
-<section class="max-w-18-col mx-auto px-80 md:px-gutter">
+<section class="limit-width-large">
   <h1 class="sr-only">pão no gancho</h1>
   <p class="sr-only">Oportunidades para todos.</p>
 
@@ -103,7 +103,7 @@ layout: layouts/base.liquid
 
 <section class="relative mt-352 sm:mt-288">
   <div
-    class="svg-header absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-3/4 md:-translate-y-3/4 sm:-translate-y-288 sm:max-ww-4-col z-10"
+    class="svg-header z-10 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-3/4"
     aria-label="Onde está o gancho?"
   >
     {% include vectors/where_is_the_hook.svg %}
@@ -125,7 +125,7 @@ layout: layouts/base.liquid
 </section>
 
 <section class="limit-width">
-  <div class="svg-header max-w-6-col md:max-w-3-col" aria-label="Seja parceiro">
+  <div class="svg-header" aria-label="Seja parceiro">
     {% include vectors/be_partner.svg %}
   </div>
 
@@ -220,8 +220,8 @@ layout: layouts/base.liquid
   </section>
 </section>
 
-<section id="seja_parceiro" class="limit-width mt-40">
-  <div class="svg-header" aria-label="Faça o registo">
+<section id="seja_parceiro" class="limit-width-large mt-40">
+  <div class="svg-header transform translate-y-1/4" aria-label="Faça o registo">
     {% include vectors/register.svg %}
   </div>
 
@@ -287,7 +287,7 @@ layout: layouts/base.liquid
 </section>
 
 <section id="como_surgiu" class="limit-width mt-168 sm:mt-112">
-  <header class="svg-header mb-40" aria-label="Como surgiu?">
+  <header class="svg-header mt-40 mb-112 transform" style="transform: rotate(30deg);" aria-label="Como surgiu?">
     {% include vectors/how_it_appears.svg %}
   </header>
 
@@ -326,14 +326,13 @@ layout: layouts/base.liquid
   <div
     class="max-w-12-col flex flex-row justify-between mx-auto mt-56 md:flex-col md:space-y-24 md:items-center"
   >
-    {% include vectors/subvisual.svg %} {% include vectors/you_had_a_problem.svg
-    %} {% include vectors/onda.svg %} {% include vectors/finiam.svg %}
+    {% include vectors/subvisual.svg %} {% include vectors/you_had_a_problem.svg%} {% include vectors/onda.svg %} {% include vectors/finiam.svg %}
   </div>
 </section>
 
-<section class="limit-width mb-80">
+<section class="limit-width-large mb-80">
   <div
-    class="px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64 sm:px-24"
+    class="max-w-16-col mx-auto px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64 sm:px-24"
   >
     <div
       class="flex flex-col text-112 font-serif xl:text-84 md:text-56"

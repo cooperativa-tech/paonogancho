@@ -46,7 +46,7 @@ html {
   }
 
   .svg-header {
-    @apply flex w-7-col justify-center mt-88 mx-auto xl:w-6-col md:mt-40 md:w-5-col sm:w-3-col;
+    @apply flex w-5-col justify-center mt-88 mx-auto md:mt-40 md:w-4-col sm:w-168 h-auto;
   }
 
   .hook {
