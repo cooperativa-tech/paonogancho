@@ -69,16 +69,16 @@ html {
   }
 
   [data-rotate-infinite="true"] {
-    animation: rotate 3s linear infinite;
+    animation: rotate var(--animation-speed, 3s) linear infinite;
   }
 
   @keyframes rotate {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(var(--animation-angle, 0deg));
     }
 
     100% {
-      transform: rotate(360deg);
+      transform: rotate(calc(var(--animation-angle, 0deg) + 360deg));
     }
   }
 }
