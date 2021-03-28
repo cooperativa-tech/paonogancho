@@ -109,7 +109,7 @@ layout: layouts/base.liquid
     {% include vectors/where_is_the_hook.svg %}
   </div>
 
-  <div class="relative overflow-hidden" style="height: 65vh;">
+  <div class="relative overflow-hidden" style="height: 65vh">
     <div class="absolute w-screen h-full bg-white left-0">
       <iframe
         width="100%"
@@ -220,74 +220,97 @@ layout: layouts/base.liquid
   </section>
 </section>
 
-<section id="seja_parceiro" class="limit-width-large mt-40">
-  <div class="svg-header transform translate-y-1/4 md:translate-y-48" aria-label="Faça o registo">
-    {% include vectors/register.svg %}
-  </div>
+<div class="px-32">
+  <section id="seja_parceiro" class="limit-width-large mt-384 relative sm:mt-224">
+    <div
+      class="absolute w-full h-full left-0 top-0 bg-blue rounded-3xl transform -rotate-2 z-20"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="absolute w-full h-full left-0 top-0 bg-pink rounded-3xl transform rotate-2 z-10"
+      aria-hidden="true"
+    ></div>
 
-  <div
-    class="max-w-16-col bg-blue text-white rounded-3xl p-184 px-112 xl:px-80 md:px-24 md:py-48"
-  >
-    <p class="text-40 xl:text-28 md:px-24 sm:text-20 sm:px-0">
-      O <span class="hook">pão no gancho</span> começa com a adesão de
-      estabelecimentos como o seu. Faça parte da nossa comunidade e ajude-nos a
-      alimentar quem mais precisa.
-    </p>
-
-    <form
-      class="flex flex-col items-center mt-80 md:mt-48"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
+    <div
+      class="svg-header absolute -top-112 left-1/2 z-40 transform -translate-x-1/2 -translate-y-3/4 md:-translate-y-1/2 sm:-translate-y-1/3"
+      aria-label="Faça o registo"
     >
-      <p class="hidden">
-        <label
-          >Don’t fill this out if you’re human: <input name="bot-field"
-        /></label>
+      {% include vectors/register.svg %}
+    </div>
+
+    <div
+      class="relative z-30 max-w-16-col text-white p-184 px-112 xl:px-80 md:px-24 md:py-48 md:pt-88"
+    >
+      <p class="text-40 xl:text-28 md:px-24 sm:text-20 sm:px-0">
+        O <span class="hook">pão no gancho</span> começa com a adesão de
+        estabelecimentos como o seu. Faça parte da nossa comunidade e ajude-nos
+        a alimentar quem mais precisa.
       </p>
-      <div class="flex flex-col space-y-24 text-black w-full">
-        <input class="input" name="name" placeholder="Nome*" required="true" />
-        <input
-          class="input"
-          name="email"
-          placeholder="Email*"
-          required="true"
-        />
-        <div
-          class="grid grid-flow-row grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-24"
-        >
+
+      <form
+        class="flex flex-col items-center mt-80 md:mt-48"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <p class="hidden">
+          <label
+            >Don’t fill this out if you’re human: <input name="bot-field"
+          /></label>
+        </p>
+        <div class="flex flex-col space-y-24 text-black w-full">
           <input
-            class="input xl:col-span-2 md:col-span-1"
-            name="space_name"
-            placeholder="Nome do Espaço*"
+            class="input"
+            name="name"
+            placeholder="Nome*"
             required="true"
           />
-          <input class="input" name="facebook" placeholder="Facebook" />
-          <input class="input" name="instagram" placeholder="Instagram" />
+          <input
+            class="input"
+            name="email"
+            placeholder="Email*"
+            required="true"
+          />
+          <div
+            class="grid grid-flow-row grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-24"
+          >
+            <input
+              class="input xl:col-span-2 md:col-span-1"
+              name="space_name"
+              placeholder="Nome do Espaço*"
+              required="true"
+            />
+            <input class="input" name="facebook" placeholder="Facebook" />
+            <input class="input" name="instagram" placeholder="Instagram" />
+          </div>
+          <input
+            class="input"
+            name="address"
+            placeholder="Morada*"
+            required="true"
+          />
+          <textarea
+            class="input h-224 sm:h-88"
+            name="questions"
+            placeholder="Observações/Questões"
+          ></textarea>
         </div>
-        <input
-          class="input"
-          name="address"
-          placeholder="Morada*"
-          required="true"
-        />
-        <textarea
-          class="input h-224 sm:h-88"
-          name="questions"
-          placeholder="Observações/Questões"
-        ></textarea>
-      </div>
 
-      <button
-        class="bg-pink rounded-3xl text-40 xl:text-28 leading-none xl:leading-none py-16 px-40 font-serif mt-56"
-      >
-        Registar
-      </button>
-    </form>
-  </div>
-</section>
+        <button
+          class="bg-pink rounded-3xl text-40 xl:text-28 leading-none xl:leading-none py-16 px-40 font-serif mt-56"
+        >
+          Registar
+        </button>
+      </form>
+    </div>
+  </section>
+</div>
 
 <section id="como_surgiu" class="limit-width mt-168 sm:mt-112">
-  <header class="svg-header mt-40 mb-112 transform" style="transform: rotate(30deg);" aria-label="Como surgiu?">
+  <header
+    class="svg-header mt-40 mb-112 transform"
+    style="transform: rotate(30deg)"
+    aria-label="Como surgiu?"
+  >
     {% include vectors/how_it_appears.svg %}
   </header>
 
@@ -326,7 +349,9 @@ layout: layouts/base.liquid
   <div
     class="max-w-12-col flex flex-row justify-between mx-auto mt-56 md:flex-col md:space-y-24 md:items-center"
   >
-    {% include vectors/subvisual.svg %} {% include vectors/you_had_a_problem.svg%} {% include vectors/onda.svg %} {% include vectors/finiam.svg %}
+    {% include vectors/subvisual.svg %} {% include
+    vectors/you_had_a_problem.svg%} {% include vectors/onda.svg %} {% include
+    vectors/finiam.svg %}
   </div>
 </section>
 
