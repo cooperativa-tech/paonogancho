@@ -21,12 +21,21 @@ if (shouldAnimate)
     passive: false,
   });
 
-function scrollRotate() {
+let step = 0;
+let oldScroll;
+
+function scrollRotate(event) {
   const elements = document.querySelectorAll('[data-rotate-on-scroll="true"]');
+  const isUp = oldScroll > this.scrollY;
+
+  if (isUp) step += 1;
+  else step -= 1;
+
+  oldScroll = this.scrollY;
 
   elements.forEach((element) => {
     styler(element).set({
-      rotate: (Number(element.dataset.rotateInitial) + window.pageYOffset) / 8,
+      rotate: Number(element.dataset.rotateInitial) + step,
     });
   });
 }

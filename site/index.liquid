@@ -143,8 +143,30 @@ layout: layouts/base.liquid
   </div>
 </section>
 
-<section id="como_funciona" class="limit-width">
-  <div class="svg-header" aria-label="Como funciona?">
+<section id="como_funciona" class="limit-width relative">
+  <div
+    class="absolute top-0 transform w-112 xl:w-88 xl:left-112 md:left-32 sm:w-64"
+  >
+    <img
+      class="transform rotate-12"
+      src="/images/faces/face7.png"
+      data-rotate-on-scroll="true"
+      data-rotate-initial="12"
+    />
+  </div>
+
+  <div
+    class="absolute right-0 top-352 transform w-112 xl:w-88 xl:right-112 md:right-32 md:top-256 sm:w-64 sm:top-112"
+  >
+    <img
+      class="transform rotate-12"
+      src="/images/faces/face8.png"
+      data-rotate-on-scroll="true"
+      data-rotate-initial="12"
+    />
+  </div>
+
+  <div class="svg-header relative" aria-label="Como funciona?">
     {% include vectors/how_it_works.svg %}
   </div>
 
