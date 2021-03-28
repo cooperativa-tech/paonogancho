@@ -26,7 +26,7 @@ function scrollRotate(event) {
 
   elements.forEach((element) => {
     styler(element).set({
-      rotate: (Number(element.dataset.rotateInitial) + window.pageYOffset) / 12,
+      rotate: (Number(element.dataset.rotateInitial) + window.scrollY) / 8,
     });
   });
 }
