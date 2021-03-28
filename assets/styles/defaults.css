@@ -67,4 +67,8 @@ html {
     @apply border-black;
     outline: none;
   }
+
+  [data-rotate-on-scroll="true"] {
+    @apply transition-transform duration-700 ease-in-out;
+  }
 }
