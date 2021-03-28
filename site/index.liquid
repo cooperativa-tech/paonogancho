@@ -2,16 +2,29 @@
 layout: layouts/base.liquid
 ---
 
-<section class="limit-width-large">
+<section class="limit-width-large relative">
   <h1 class="sr-only">pão no gancho</h1>
   <p class="sr-only">Oportunidades para todos.</p>
+
+  <div class="absolute top-0 left-1/2 w-192 xl:w-112 md:w-56" data-rotate-on-scroll="true">
+    <img class=" transform -translate-y-3/4 -rotate-12" src="/images/faces/face2.png" />
+  </div>
+
+  <div class="absolute top-1/2 right-0 w-192 xl:w-112 md:w-56" data-rotate-on-scroll="true">
+    <img class=" transform -translate-y-3/4 -rotate-12" src="/images/faces/face3.png" />
+  </div>
 
   <div
     class="flex flex-col mt-128 text-224 font-serif xl:text-112 sm:text-66 sm:mt-48"
     style="line-height: 0.8"
     aria-hidden="true"
   >
-    <span>pão</span>
+    <span class="relative">
+      <div class="absolute top-0 w-192 xl:w-112 md:w-56" data-rotate-on-scroll="true">
+        <img class="transform -translate-y-3/4 -rotate-12" src="/images/faces/face1.png" />
+      </div>
+      pão
+    </span>
     <span>no</span>
     <span class="flex items-center justify-between xl:justify-start">
       <span>gancho</span>
