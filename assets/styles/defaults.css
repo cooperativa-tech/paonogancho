@@ -70,6 +70,7 @@ html {
 
   [data-rotate-infinite="true"] {
     animation: rotate var(--animation-speed, 3s) linear infinite;
+    animation-direction: var(--animation-direction, forwards);
   }
 
   @keyframes rotate {
