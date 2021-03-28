@@ -7,9 +7,7 @@
     "format": "prettier --write \"assets/**/*.js\" *.js \"assets/**/*.css\"",
     "lint": "prettier --check \"assets/**/*.js\" *.js \"assets/**/*.css\""
   },
-  "dependencies": {
-    "stylefire": "^7.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@snowpack/plugin-postcss": "^1.2.1",
