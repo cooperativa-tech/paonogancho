@@ -10,7 +10,11 @@ layout: layouts/base.liquid
     class="absolute top-0 left-1/2 w-192 transform -translate-y-3/4 xl:w-112 md:w-56 md:-translate-y-full"
   >
     <img
-      style="--animation-speed: 12s; --animation-angle: 45deg; --animation-direction: reverse;"
+      style="
+        --animation-speed: 12s;
+        --animation-angle: 45deg;
+        --animation-direction: reverse;
+      "
       src="/images/faces/face2.png"
       loading="lazy"
       data-rotate-infinite="true"
@@ -21,7 +25,7 @@ layout: layouts/base.liquid
     class="absolute top-1/2 right-56 w-192 transform -translate-y-3/4 xl:w-112 xl:top-0 md:w-56 md:-translate-y-0"
   >
     <img
-      style="--animation-speed: 9.5s; --animation-angle: 90deg;"
+      style="--animation-speed: 9.5s; --animation-angle: 90deg"
       src="/images/faces/face3.png"
       loading="lazy"
       data-rotate-infinite="true"
@@ -32,7 +36,11 @@ layout: layouts/base.liquid
     class="absolute top-1/2 left-1/2 w-256 transform -translate-y-1/2 xl:w-112 xl:left-3/4 md:w-56 md:-translate-y-full"
   >
     <img
-    style="--animation-speed: 6.5s; --animation-angle: 120deg; --animation-direction: reverse"
+      style="
+        --animation-speed: 6.5s;
+        --animation-angle: 120deg;
+        --animation-direction: reverse;
+      "
       src="/images/faces/face4.png"
       loading="lazy"
       data-rotate-infinite="true"
@@ -49,7 +57,7 @@ layout: layouts/base.liquid
         class="absolute top-8 w-192 transform -translate-y-3/4 xl:w-112 md:w-56"
       >
         <img
-          style="--animation-speed: 7s; --animation-angle: 37deg;"
+          style="--animation-speed: 7s; --animation-angle: 37deg"
           src="/images/faces/face1.png"
           data-rotate-infinite="true"
         />
@@ -58,11 +66,15 @@ layout: layouts/base.liquid
     </span>
     <span class="relative">
       <div
-        class="absolute left-264 w-128 xl:w-88 xl:left-152 md:w-40 md:left-120"
+        class="absolute left-264 w-128 xl:w-88 xl:left-152 md:w-40 md:left-120 sm:left-88 sm:w-32"
         style="z-index: -1"
       >
         <img
-          style="--animation-speed: 14s; --animation-angle: 20deg; --animation-direction: reverse"
+          style="
+            --animation-speed: 14s;
+            --animation-angle: 20deg;
+            --animation-direction: reverse;
+          "
           src="/images/faces/face5.png"
           data-rotate-infinite="true"
         />
@@ -92,7 +104,7 @@ layout: layouts/base.liquid
         class="absolute right-48 top-0 transform -translate-y-1/2 w-168 xl:w-88 md:w-40"
       >
         <img
-          style="--animation-speed: 8s; --animation-angle: 27deg;"
+          style="--animation-speed: 8s; --animation-angle: 27deg"
           src="/images/faces/face6.png"
           data-rotate-infinite="true"
         />
@@ -139,20 +151,24 @@ layout: layouts/base.liquid
 
 <section id="como_funciona" class="limit-width relative">
   <div
-    class="absolute top-0 transform w-112 xl:w-88 xl:left-112 md:left-32 sm:w-64"
+    class="absolute top-0 transform w-112 xl:w-88 xl:left-112 md:left-32 sm:w-48"
   >
     <img
-      style="--animation-speed: 15s; --animation-angle: 67deg; --animation-direction: reverse"
+      style="
+        --animation-speed: 15s;
+        --animation-angle: 67deg;
+        --animation-direction: reverse;
+      "
       src="/images/faces/face7.png"
       data-rotate-infinite="true"
     />
   </div>
 
   <div
-    class="absolute right-0 top-352 transform w-112 xl:w-88 xl:right-112 md:right-32 md:top-256 sm:w-64 sm:top-112"
+    class="absolute right-56 top-352 transform w-112 xl:w-88 xl:right-112 md:right-32 md:top-256 sm:w-48 sm:top-112"
   >
     <img
-      style="--animation-speed: 8s; --animation-angle: 55deg;"
+      style="--animation-speed: 8s; --animation-angle: 55deg"
       src="/images/faces/face8.png"
       data-rotate-infinite="true"
     />
@@ -193,20 +209,24 @@ layout: layouts/base.liquid
     style="height: 65vh"
   >
     <div
-      class="absolute left-48 top-0 w-128 transform -translate-y-1/2 md:w-88"
+      class="absolute left-48 top-0 w-128 transform -translate-y-1/2 md:w-88 sm:w-56"
     >
       <img
-        style="--animation-speed: 14s; --animation-angle: 69deg; --animation-direction: reverse"
+        style="
+          --animation-speed: 14s;
+          --animation-angle: 69deg;
+          --animation-direction: reverse;
+        "
         src="/images/faces/face9.png"
         data-rotate-infinite="true"
       />
     </div>
 
     <div
-      class="absolute right-48 bottom-0 w-128 transform translate-y-1/2 md:w-88"
+      class="absolute right-48 bottom-0 w-128 transform translate-y-1/2 md:w-88 sm:w-56 sm:translate-y-full sm:"
     >
       <img
-        style="--animation-speed: 6s; --animation-angle: 77deg;"
+        style="--animation-speed: 6s; --animation-angle: 77deg"
         src="/images/faces/face10.png"
         data-rotate-infinite="true"
       />
@@ -214,7 +234,7 @@ layout: layouts/base.liquid
   </div>
 
   <div
-    class="svg-header z-10 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full"
+    class="svg-header z-10 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full sm:-top-80"
     aria-label="Onde está o gancho?"
   >
     {% include vectors/where_is_the_hook.svg %}
@@ -241,9 +261,13 @@ layout: layouts/base.liquid
   </div>
 
   <div class="relative">
-    <div class="absolute bottom-0 left-0 w-152 md:w-112">
+    <div class="absolute bottom-0 left-0 w-152 md:w-112 sm:w-48">
       <img
-        style="--animation-speed: 9s; --animation-angle: 23deg; --animation-direction: reverse"
+        style="
+          --animation-speed: 9s;
+          --animation-angle: 23deg;
+          --animation-direction: reverse;
+        "
         src="/images/faces/face11.png"
         data-rotate-infinite="true"
       />
@@ -341,17 +365,27 @@ layout: layouts/base.liquid
   </section>
 </section>
 
-<div class="px-32">
+<div class="relative limit-width">
+  <div class="absolute right-32 w-128 xl:w-88 md:w-56">
+    <img
+      style="--animation-speed: 8s; --animation-angle: 30deg"
+      src="/images/faces/face12.png"
+      data-rotate-infinite="true"
+    />
+  </div>
+</div>
+
+<div class="px-32 sm:overflow-hidden sm:px-0">
   <section
     id="seja_parceiro"
     class="limit-width-large mt-384 relative sm:mt-224"
   >
     <div
-      class="absolute w-full h-full left-0 top-0 bg-blue rounded-3xl transform -rotate-2 z-20"
+      class="absolute w-full h-full left-0 top-0 bg-blue rounded-3xl transform -rotate-2 z-20 sm:rotate-0"
       aria-hidden="true"
     ></div>
     <div
-      class="absolute w-full h-full left-0 top-0 bg-pink rounded-3xl transform rotate-2 z-10"
+      class="absolute w-full h-full left-0 top-0 bg-pink rounded-3xl transform rotate-2 z-10 sm:rotate-4"
       aria-hidden="true"
     ></div>
 
@@ -363,7 +397,7 @@ layout: layouts/base.liquid
     </div>
 
     <div
-      class="relative z-30 max-w-16-col text-white p-184 px-112 xl:px-80 md:px-24 md:py-48 md:pt-88"
+      class="relative z-30 max-w-16-col text-white p-184 px-112 xl:px-80 md:px-24 md:py-48 md:pt-88 sm:px-0"
     >
       <p class="text-40 xl:text-28 md:px-24 sm:text-20 sm:px-0">
         O <span class="hook">pão no gancho</span> começa com a adesão de
@@ -429,13 +463,35 @@ layout: layouts/base.liquid
   </section>
 </div>
 
+<div class="relative limit-width">
+  <div
+    class="absolute left-128 -top-64 w-128 xl:w-88 md:w-40 sm:w-56 z-50 sm:left-48 sm:-top-24"
+  >
+    <img
+      style="--animation-speed: 8s; --animation-angle: 30deg"
+      src="/images/faces/face13.png"
+      data-rotate-infinite="true"
+    />
+  </div>
+</div>
+
 <section id="como_surgiu" class="limit-width mt-168 sm:mt-112">
   <header
-    class="svg-header mt-40 mb-112 transform"
+    class="svg-header mt-40 mb-112 transform relative"
     style="transform: rotate(30deg)"
     aria-label="Como surgiu?"
   >
     {% include vectors/how_it_appears.svg %}
+
+    <div
+      class="absolute top-0 -right-16 w-128 xl:w-88 md:w-64 sm:w-40"
+    >
+      <img
+        style="--animation-speed: 8s; --animation-angle: 30deg"
+        src="/images/faces/face14.png"
+        data-rotate-infinite="true"
+      />
+    </div>
   </header>
 
   <div class="space-y-40 text-28 max-w-10-col mx-auto xl:text-20 md:text-16">
@@ -479,38 +535,4 @@ layout: layouts/base.liquid
   </div>
 </section>
 
-<section class="limit-width-large mb-80">
-  <div
-    class="max-w-16-col mx-auto px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64 sm:px-24"
-  >
-    <div
-      class="flex flex-col text-112 font-serif xl:text-84 md:text-56"
-      aria-hidden="true"
-      style="line-height: 0.8"
-    >
-      <span>pão</span>
-      <span>no</span>
-      <span class="flex items-center">
-        <span>gancho</span>
-      </span>
-    </div>
-
-    <div class="ml-120 xl:ml-0 xl:mt-256 flex flex-col">
-      <div class="flex flex-row space-x-24">
-        <a class="flex justify-center" href="#" aria-label="Facebook page">
-          {% include icons/facebook.svg %}
-        </a>
-
-        <a class="flex justify-center" href="#" aria-label="Instagram page">
-          {% include icons/instagram.svg %}
-        </a>
-      </div>
-
-      <a
-        class="block text-40 md:text-16 font-sans mt-24"
-        href="mailto:info@paonogancho.pt"
-        >info@paonogancho.pt</a
-      >
-    </div>
-  </div>
-</section>
+{% include components/footer %}
