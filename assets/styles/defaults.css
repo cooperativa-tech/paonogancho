@@ -82,4 +82,18 @@ html {
       transform: rotate(calc(var(--animation-angle, 0deg) + 360deg));
     }
   }
+
+  .title-letters {
+    position: relative;
+    display: inline-flex;
+  }
+
+  .title-letter {
+    display: inline-block;
+    opacity: 0;
+  }
+
+  .has-js .title-opportunities {
+    opacity: 0;
+  }
 }

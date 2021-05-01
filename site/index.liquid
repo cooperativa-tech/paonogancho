@@ -62,7 +62,7 @@ layout: layouts/base.liquid
           data-rotate-infinite="true"
         />
       </div>
-      pão
+      <span class="title-letters">pão</span>
     </span>
     <span class="relative">
       <div
@@ -79,22 +79,29 @@ layout: layouts/base.liquid
           data-rotate-infinite="true"
         />
       </div>
-      no
+      <span class="title-letters">no</span>
     </span>
     <span class="flex items-center justify-between xl:justify-start">
-      <span>gancho</span>
+      <span class="title-letters">gancho</span>
 
       <span
-        class="text-40 xl:text-28 font-sans max-w-6-col xl:max-w-3-col ml-column-spacing 2xl:ml-32 md:hidden"
+        class="title-opportunities text-40 xl:text-28 font-sans max-w-6-col xl:max-w-3-col ml-column-spacing 2xl:ml-32 md:hidden"
       >
         Oportunidades para todos.
       </span>
     </span>
 
-    <span class="hidden md:block text-20 max-w-2-col font-sans mt-24 md:mt-32">
+    <span class="title-opportunities hidden md:block text-20 max-w-2-col font-sans mt-24 md:mt-32">
       Oportunidades para todos.
     </span>
   </div>
+
+  <script>
+    const lettersElements = document.querySelectorAll(".title-letters");
+    lettersElements.forEach(el => {
+      el.innerHTML = el.textContent.replace(/\S/g, "<span class='title-letter'>$&</span>");
+    })
+  </script>
 </section>
 
 <section class="mt-224 xl:mt-128 md:mt-32 sm:px-8">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang={{ metadata.lang }}>
+<html lang={{ metadata.lang }} class="no-js">
   <head>
     <link href="/assets/styles/index.css" rel="stylesheet"/>
 
@@ -10,6 +10,13 @@
     <meta name="keywords" content="{{ metadata.keywords }}" />
 
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+       const htmlElement = document.documentElement;
+
+        htmlElement.classList.remove("no-js");
+        htmlElement.classList.add("has-js");
+    </script>
   </head>
 
   <body class="bg-beige">
