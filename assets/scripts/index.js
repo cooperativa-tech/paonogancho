@@ -18,13 +18,40 @@ anime
   .add({
     targets: ".title-letter",
     opacity: 1,
-    translateY: ["1.1em", 0],
-    translateZ: 0,
+    translateY: ["0.5em", 0],
     duration: 750,
-    delay: (el, i) => 100 * i,
+    delay: (el, i) => 75 * i,
   })
-  .add({
+  /*.add({
     targets: ".title-opportunities",
     opacity: 1,
-    duration: 1500,
-  });
+    translateY: ["0.5em", 0],
+    duration: 750,
+    delay: (el, i) => 100 * i,
+  });*/
+
+const opportunities = document.querySelectorAll('.title-opportunities-anim');
+opportunities.forEach((el, i) => {
+  setTimeout(() => {
+    el.style.transform = `translate(0px, 0px)`;
+    el.style.opacity = 1;
+  }, 100 * i);
+});
+
+const navLinks = document.querySelector('nav').children[0].children;
+console.log(navLinks);
+
+for(let i = 0; i < navLinks.length; i++){
+  setTimeout(() => {
+    navLinks[i].style.transform = `translate(0px, 0px)`;
+    navLinks[i].style.opacity = 1;
+  }, 150 * i);
+}
+
+const faces = document.querySelectorAll('.face');
+faces.forEach((el, i) => {
+  setTimeout(() => {
+    el.style.transform = `translate(0px, 0px)`;
+    el.style.opacity = 1;
+  }, 200 * i);
+});
