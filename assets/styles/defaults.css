@@ -93,10 +93,6 @@ html {
     opacity: 0;
   }
 
-  .has-js .title-opportunities {
-    /*opacity: 0;*/
-  }
-
   .has-js .title-opportunities .title-opportunities-anim {
     opacity: 0;
     transform-origin: bottom left;
@@ -110,7 +106,7 @@ html {
     transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1) 0.75s;
   }
 
-  nav ul li {
+  .has-js nav ul li {
     opacity: 0;
     transform-origin: bottom left;
     -webkit-transform: translate(0, 16px) rotate(1deg);
@@ -123,7 +119,7 @@ html {
     transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1) 1.5s;
   }
 
-  .face {
+  .has-js .face {
     opacity: 0;
     -webkit-transform: translate(0, 56px) rotate(90deg) scale(0);
     -moz-transform: translate(0, 56px) rotate(90deg) scale(0);
@@ -135,7 +131,7 @@ html {
     transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .reveal {
+  .has-js .reveal {
     opacity: 0;
     transform-origin: bottom left;
     -webkit-transform: translate(0, 56px) rotate(3deg);
@@ -148,7 +144,7 @@ html {
     transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .reveal-title svg {
+  .has-js .reveal-title svg {
     opacity: 0;
     -webkit-transform: translate(0, 56px) rotate(90deg) scale(0);
     -moz-transform: translate(0, 56px) rotate(90deg) scale(0);
