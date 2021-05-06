@@ -49,9 +49,50 @@ for(let i = 0; i < navLinks.length; i++){
 }
 
 const faces = document.querySelectorAll('.face');
-faces.forEach((el, i) => {
-  setTimeout(() => {
-    el.style.transform = `translate(0px, 0px)`;
-    el.style.opacity = 1;
-  }, 200 * i);
+const reveal = document.querySelectorAll('.reveal');
+setTimeout(() => {
+  faces.forEach((el, i) => {
+    if(i < 5){
+      setTimeout(() => {
+        el.style.transform = `translate(0px, 0px)`;
+        el.style.opacity = 1;
+      }, 100 * i);
+    }
+  });
+}, 700);
+
+window.addEventListener('scroll', () => {
+  whenEntersViewport();
 });
+
+function whenEntersViewport(){
+  faces.forEach((el, i) => {
+    if(i >= 5){
+      if(inViewport(el)){
+        el.style.transform = `translate(0px, 0px)`;
+        el.style.opacity = 1;
+      }
+    }
+  });
+
+  reveal.forEach((el, i) => {
+    if(inViewport(el)){
+      el.style.transform = `translate(0px, 0px)`;
+      el.style.opacity = 1;
+    }
+  });
+}
+
+function inViewport(el) {
+  let r, html;
+  if ( !el || 1 !== el.nodeType ) { return false; }
+  html = document.documentElement;
+  r = el.getBoundingClientRect();
+
+  return ( !!r
+    && r.bottom >= 0
+    && r.right >= 0
+    && r.top <= html.clientHeight
+    && r.left <= html.clientWidth
+  );
+}
