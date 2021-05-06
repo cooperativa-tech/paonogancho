@@ -125,14 +125,14 @@ html {
 
   .face {
     opacity: 0;
-    -webkit-transform: translate(0, 56px) rotate(90deg);
-    -moz-transform: translate(0, 56px) rotate(90deg);
-    -o-transform: translate(0, 56px) rotate(90deg);
-    transform: translate(0, 56px) rotate(90deg);
-    -webkit-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
-    -moz-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
-    -o-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
-    transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
+    -webkit-transform: translate(0, 56px) rotate(90deg) scale(0);
+    -moz-transform: translate(0, 56px) rotate(90deg) scale(0);
+    -o-transform: translate(0, 56px) rotate(90deg) scale(0);
+    transform: translate(0, 56px) rotate(90deg) scale(0);
+    -webkit-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
+    -moz-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
+    -o-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .reveal {
@@ -142,9 +142,21 @@ html {
     -moz-transform: translate(0, 56px) rotate(3deg);
     -o-transform: translate(0, 56px) rotate(3deg);
     transform: translate(0, 56px) rotate(3deg);
-    -webkit-transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1) 0.05;
-    -moz-transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
-    -o-transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
-    transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1) 0.05s;
+    -webkit-transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1);
+    -moz-transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1);
+    -o-transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition: all 1500ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal-title svg {
+    opacity: 0;
+    -webkit-transform: translate(0, 56px) rotate(90deg) scale(0);
+    -moz-transform: translate(0, 56px) rotate(90deg) scale(0);
+    -o-transform: translate(0, 56px) rotate(90deg) scale(0);
+    transform: translate(0, 56px) rotate(90deg) scale(0);
+    -webkit-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
+    -moz-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
+    -o-transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition: all 750ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 }

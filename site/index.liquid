@@ -189,7 +189,7 @@ layout: layouts/base.liquid
     />
   </div>
 
-  <div class="svg-header relative" aria-label="Como funciona?">
+  <div class="svg-header relative reveal-title" aria-label="Como funciona?">
     {% include vectors/how_it_works.svg %}
   </div>
 
@@ -251,7 +251,7 @@ layout: layouts/base.liquid
   </div>
 
   <div
-    class="svg-header z-10 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full sm:-top-80"
+    class="svg-header z-10 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full sm:-top-80 reveal-title"
     aria-label="Onde está o gancho?"
   >
     {% include vectors/where_is_the_hook.svg %}
@@ -273,7 +273,7 @@ layout: layouts/base.liquid
 </section>
 
 <section class="limit-width">
-  <div class="svg-header" aria-label="Seja parceiro">
+  <div class="svg-header reveal-title" aria-label="Seja parceiro">
     {% include vectors/be_partner.svg %}
   </div>
 
@@ -409,23 +409,23 @@ layout: layouts/base.liquid
     ></div>
 
     <div
-      class="svg-header absolute -top-112 left-1/2 z-40 transform -translate-x-1/2 -translate-y-3/4 md:-translate-y-1/2 sm:-translate-y-1/3"
+      class="svg-header absolute -top-112 left-1/2 z-40 transform -translate-x-1/2 -translate-y-3/4 md:-translate-y-1/2 sm:-translate-y-1/3 reveal-title"
       aria-label="Faça o registo"
     >
       {% include vectors/register.svg %}
     </div>
 
     <div
-      class="relative z-30 max-w-16-col text-white p-184 px-112 xl:px-80 md:px-24 md:py-48 md:pt-88 sm:px-0 reveal"
+      class="relative z-30 max-w-16-col text-white p-184 px-112 xl:px-80 md:px-24 md:py-48 md:pt-88 sm:px-0"
     >
-      <p class="text-40 xl:text-28 md:px-24 sm:text-20 sm:px-0">
+      <p class="text-40 xl:text-28 md:px-24 sm:text-20 sm:px-0 reveal">
         O <span class="hook">pão no gancho</span> começa com a adesão de
         estabelecimentos como o seu. Faça parte da nossa comunidade e ajude-nos
         a alimentar quem mais precisa.
       </p>
 
       <form
-        class="flex flex-col items-center mt-80 md:mt-48"
+        class="flex flex-col items-center mt-80 md:mt-48 reveal"
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
@@ -436,13 +436,13 @@ layout: layouts/base.liquid
         </p>
         <div class="flex flex-col space-y-24 text-black w-full">
           <input
-            class="input"
+            class="input reveal"
             name="name"
             placeholder="Nome*"
             required="true"
           />
           <input
-            class="input"
+            class="input reveal"
             name="email"
             placeholder="Email*"
             required="true"
@@ -451,29 +451,29 @@ layout: layouts/base.liquid
             class="grid grid-flow-row grid-cols-3 xl:grid-cols-2 md:grid-cols-1 gap-24"
           >
             <input
-              class="input xl:col-span-2 md:col-span-1"
+              class="input xl:col-span-2 md:col-span-1 reveal"
               name="space_name"
               placeholder="Nome do Espaço*"
               required="true"
             />
-            <input class="input" name="facebook" placeholder="Facebook" />
-            <input class="input" name="instagram" placeholder="Instagram" />
+            <input class="input reveal" name="facebook" placeholder="Facebook" />
+            <input class="input reveal" name="instagram" placeholder="Instagram" />
           </div>
           <input
-            class="input"
+            class="input reveal"
             name="address"
             placeholder="Morada*"
             required="true"
           />
           <textarea
-            class="input h-224 sm:h-88"
+            class="input h-224 sm:h-88 reveal"
             name="questions"
             placeholder="Observações/Questões"
           ></textarea>
         </div>
 
         <button
-          class="bg-pink rounded-3xl text-40 xl:text-28 leading-none xl:leading-none py-16 px-40 font-serif mt-56"
+          class="bg-pink rounded-3xl text-40 xl:text-28 leading-none xl:leading-none py-16 px-40 font-serif mt-56 reveal"
         >
           Registar
         </button>
@@ -497,11 +497,11 @@ layout: layouts/base.liquid
 
 <section id="como_surgiu" class="limit-width mt-168 sm:mt-112">
   <header
-    class="svg-header mt-40 mb-112 transform relative"
+    class="svg-header mt-40 mb-112 transform relative reveal-title"
     style="transform: rotate(30deg)"
     aria-label="Como surgiu?"
   >
-    {% include vectors/how_it_appears.svg %}
+      {% include vectors/how_it_appears.svg %}
 
     <div
       class="absolute top-0 -right-16 w-128 xl:w-88 md:w-64 sm:w-40"
