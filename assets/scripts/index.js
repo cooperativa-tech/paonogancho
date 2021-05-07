@@ -69,7 +69,9 @@ setTimeout(() => {
 
 const titles = document.querySelectorAll('.reveal-title svg');
 
-
+setTimeout(() => {
+  whenEntersViewport();
+}, 1200);
 
 window.addEventListener('scroll', () => {
   whenEntersViewport();
