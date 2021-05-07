@@ -28,6 +28,8 @@ html {
   @apply text-black font-sans;
 
   font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -66,21 +68,6 @@ html {
   .input:focus {
     @apply border-black;
     outline: none;
-  }
-
-  /*[data-rotate-infinite="true"] {
-    animation: rotate var(--animation-speed, 3s) linear infinite;
-    animation-direction: var(--animation-direction, forwards);
-  }*/
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(var(--animation-angle, 0deg));
-    }
-
-    100% {
-      transform: rotate(calc(var(--animation-angle, 0deg) + 360deg));
-    }
   }
 
   .title-letters {

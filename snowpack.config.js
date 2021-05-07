@@ -10,7 +10,7 @@ module.exports = {
       "@snowpack/plugin-run-script",
       { cmd: "eleventy", watch: "$1 --watch" },
     ],
-  ].filter(plugin => !!plugin),
+  ].filter((plugin) => !!plugin),
   devOptions: {
     hmrDelay: 300,
     open: "none",

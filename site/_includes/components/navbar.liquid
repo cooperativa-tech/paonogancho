@@ -8,23 +8,31 @@
     const isScrollingUp = this.oldScroll > this.scrollY;
     this.oldScroll = this.scrollY;
 
+    // For the mobile navigation bar
     if (isScrollingUp) document.querySelector("#navigation_bar").classList.remove("sm:-translate-y-full");
     else document.querySelector("#navigation_bar").classList.add("sm:-translate-y-full");
+
+    // For the desktop navigation bar
+    if (isScrollingUp) document.querySelector("#desktop_navigation_bar").classList.remove("-translate-y-full");
+    else document.querySelector("#desktop_navigation_bar").classList.add("-translate-y-full");
   };
 </script>
 
-<nav class="max-w-18-col mx-auto px-80 md:px-gutter sm:sr-only">
-  <ul class="flex justify-end font-bold text-20 space-x-88 mt-64 whitespace-nowrap xl:space-x-48">
-    <li><a href="#como_funciona" class="btn-word-rotate">Como funciona?</a></li>
-    <li><a href="#seja_parceiro" class="btn-word-rotate-2">Seja parceiro</a></li>
-    <li><a href="#como_surgiu" class="btn-word-rotate">Como surgiu?</a></li>
-  </ul>
-</nav>
+<div id="desktop_navigation_bar" class="fixed left-0 top-0 bg-beige w-full z-50 py-48 transition-transform transform sm:sr-only">
+  <nav class="max-w-18-col mx-auto px-80 md:px-gutter ">
+    <ul class="flex justify-end font-bold text-20 space-x-88 whitespace-nowrap xl:space-x-48">
+      <li><a href="#como_funciona" class="btn-word-rotate">Como funciona?</a></li>
+      <li><a href="#seja_parceiro" class="btn-word-rotate-2">Seja parceiro</a></li>
+      <li><a href="#como_surgiu" class="btn-word-rotate">Como surgiu?</a></li>
+    </ul>
+  </nav>
+</div>
 
-<div id="navigation_bar" class="fixed hidden left-0 top-0 bg-beige w-full z-50 transition-transform transform sm:block">
+<div class="sm:hidden" style="height: 144px"></div>
+
+<div id="navigation_bar" class="fixed hidden left-0 top-0 bg-beige w-full z-50 transition-transform transform sm:block" aria-hidden="true">
   <button
     class="block m-16 mr-16 ml-auto"
-    aria-hidden="true"
     onclick="window.toggleMenu()"
   >
     {% include icons/hamburguer.svg %}
@@ -36,6 +44,7 @@
 <div
   class="hidden fixed w-full h-full top-0 left-0 bg-beige z-50 p-32"
   id="navigation_menu"
+  aria-hidden="true"
 >
   <div class="flex flex-col h-full">
     <button class="fixed top-16 right-16" onclick="window.toggleMenu()">
