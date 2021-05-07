@@ -3,7 +3,7 @@
     document.querySelector("#navigation_menu").classList.toggle("hidden");
     document.body.classList.toggle("overflow-hidden");
   };
-
+  
   window.onscroll = function (event) {
     const isScrollingUp = this.oldScroll > this.scrollY;
     this.oldScroll = this.scrollY;
@@ -14,7 +14,16 @@
 
     // For the desktop navigation bar
     if (isScrollingUp) document.querySelector("#desktop_navigation_bar").classList.remove("-translate-y-full");
-    else document.querySelector("#desktop_navigation_bar").classList.add("-translate-y-full");
+    else if(!isScrollingUp && this.scrollY > window.innerHeight * 0.5) document.querySelector("#desktop_navigation_bar").classList.add("-translate-y-full");
+
+    if(this.scrollY > window.innerHeight * 0.5) {
+      document.querySelector("#desktop_navigation_bar").style.paddingTop = '28px';
+      document.querySelector("#desktop_navigation_bar").style.paddingBottom = '20px';
+      document.querySelector("#desktop_navigation_bar").style.backgroundColor = 'rgba(255, 249, 243, 0.9)';
+    } else {
+      document.querySelector("#desktop_navigation_bar").style.paddingTop = '48px';
+      document.querySelector("#desktop_navigation_bar").style.backgroundColor = 'rgba(255, 249, 243, 0)';
+    }
   };
 </script>
 
