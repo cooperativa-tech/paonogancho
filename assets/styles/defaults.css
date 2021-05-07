@@ -28,6 +28,8 @@ html {
   @apply text-black font-sans;
 
   font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+
+  overflow-x: hidden;
 }
 
 @layer utilities {
