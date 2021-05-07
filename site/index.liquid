@@ -473,9 +473,9 @@ layout: layouts/base.liquid
         </div>
 
         <button
-          class="bg-pink rounded-3xl text-40 xl:text-28 leading-none xl:leading-none py-16 px-40 font-serif mt-56 reveal"
+          class="bg-pink rounded-3xl text-40 xl:text-28 leading-none xl:leading-none py-16 px-40 font-serif mt-56 reveal btn-hover-yellow"
         >
-          Registar
+          <div class="btn-rotate">Registar</div>
         </button>
       </form>
     </div>
@@ -524,8 +524,8 @@ layout: layouts/base.liquid
 
     <p class="reveal">
       Conhecedores da iniciativa
-      <a href="#" class="font-bold underline">Caffè Sospenso</a> e do
-      <a href="#" class="font-bold underline">Hey</a> (em Munique), decidiram
+      <a href="#" class="font-bold underline btn-word-rotate">Caffè Sospeso</a> e do
+      <a href="#" class="font-bold underline btn-word-rotate-2">Hey</a> (em Munique), decidiram
       criar a mesma iniciativa na sua nova cidade.
     </p>
 
@@ -550,9 +550,18 @@ layout: layouts/base.liquid
   <div
     class="max-w-12-col flex flex-row justify-between mx-auto mt-56 md:flex-col md:space-y-24 md:items-center"
   >
-    {% include vectors/subvisual.svg %} {% include
-    vectors/you_had_a_problem.svg%} {% include vectors/onda.svg %} {% include
-    vectors/finiam.svg %}
+    <a class="btn-word-rotate" href="https://subvisual.com/" target="_blank">
+      {% include vectors/subvisual.svg %}
+    </a>
+    <a class="btn-word-rotate-2" href="https://youhadaproblem.com/" target="_blank">
+      {% include vectors/you_had_a_problem.svg%}
+    </a>
+    <a class="btn-word-rotate" href="https://ondastudio.co/" target="_blank">
+      {% include vectors/onda.svg %}
+    </a>
+    <a class="btn-word-rotate-2" href="https://finiam.com/" target="_blank">
+      {% include vectors/finiam.svg %}
+    </a>
   </div>
 </section>
 

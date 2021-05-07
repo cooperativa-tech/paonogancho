@@ -21,15 +21,8 @@ anime
     translateY: ["0.5em", 0],
     duration: 750,
     delay: (el, i) => 75 * i,
-  })
-  /*.add({
-    targets: ".title-opportunities",
-    opacity: 1,
-    translateY: ["0.5em", 0],
-    duration: 750,
-    delay: (el, i) => 100 * i,
-  });*/
-
+  });
+  
 const opportunities = document.querySelectorAll('.title-opportunities-anim');
 opportunities.forEach((el, i) => {
   setTimeout(() => {
@@ -48,6 +41,7 @@ for(let i = 0; i < navLinks.length; i++){
 }
 
 const faces = document.querySelectorAll('.face');
+const reveal = document.querySelectorAll('.reveal');
 const rands = [];
 for(let i = 0; i < faces.length; i++){
   const rand = Math.random();
@@ -55,7 +49,6 @@ for(let i = 0; i < faces.length; i++){
   else rands.push(Math.random() * 0.5 - 1);
 }
 
-const reveal = document.querySelectorAll('.reveal');
 setTimeout(() => {
   faces.forEach((el, i) => {
     if(i < 5){
