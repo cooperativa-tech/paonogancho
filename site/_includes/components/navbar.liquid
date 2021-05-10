@@ -1,6 +1,7 @@
 <script>
   window.toggleMenu = () => {
     document.querySelector("#navigation_menu").classList.toggle("opacity-100");
+    document.querySelector("#navigation_menu").classList.toggle("pointer-events-none");
     document.body.classList.toggle("overflow-hidden");
   };
 
@@ -51,7 +52,7 @@
 <div class="hidden sm:block" style="height: 72px"></div>
 
 <div
-  class="fixed w-full h-full top-0 left-0 bg-beige z-50 p-32 transition-opacity opacity-0"
+  class="fixed w-full h-full top-0 left-0 bg-beige z-50 p-32 pointer-events-none transition-opacity opacity-0"
   id="navigation_menu"
   aria-hidden="true"
 >
