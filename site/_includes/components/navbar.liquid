@@ -1,9 +1,9 @@
 <script>
   window.toggleMenu = () => {
-    document.querySelector("#navigation_menu").classList.toggle("hidden");
+    document.querySelector("#navigation_menu").classList.toggle("opacity-100");
     document.body.classList.toggle("overflow-hidden");
   };
-  
+
   window.onscroll = function (event) {
     const isScrollingUp = this.oldScroll > this.scrollY;
     this.oldScroll = this.scrollY;
@@ -51,7 +51,7 @@
 <div class="hidden sm:block" style="height: 72px"></div>
 
 <div
-  class="hidden fixed w-full h-full top-0 left-0 bg-beige z-50 p-32"
+  class="fixed w-full h-full top-0 left-0 bg-beige z-50 p-32 transition-opacity opacity-0"
   id="navigation_menu"
   aria-hidden="true"
 >
