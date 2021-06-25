@@ -1,1 +1,45 @@
-<footer>This is a footer! Great success.</footer>
+<footer class="limit-width-large mb-80">
+  <div
+    class="relative max-w-16-col mx-auto px-80 pt-192 pb-88 flex flex-row items-end rounded-4xl bg-red text-white xl:flex-col xl:items-start xl:justify-between xl:pt-64 xl:pb-64 sm:px-24 reveal"
+  >
+    <div
+      class="absolute transform -translate-y-1/2 top-0 right-32 w-128 xl:w-88 md:w-64"
+    >
+      <img
+        class="face"
+        src="/images/faces/face15.png"
+        loading="lazy"
+      />
+    </div>
+
+    <div
+      class="flex flex-col text-112 font-serif xl:text-84 md:text-56"
+      aria-hidden="true"
+      style="line-height: 0.8"
+    >
+      <span>pão</span>
+      <span>no</span>
+      <span class="flex items-center">
+        <span>gancho</span>
+      </span>
+    </div>
+
+    <div class="ml-120 xl:ml-0 xl:mt-256 flex flex-col">
+      <div class="flex flex-row space-x-24">
+        <a class="flex justify-center btn-word-rotate" href="#" aria-label="Facebook page">
+          {% include icons/facebook.svg %}
+        </a>
+
+        <a class="flex justify-center btn-word-rotate-2" href="#" aria-label="Instagram page">
+          {% include icons/instagram.svg %}
+        </a>
+      </div>
+
+      <a
+        class="block text-40 md:text-16 font-sans mt-24 btn-word-rotate-2"
+        href="mailto:info@paonogancho.pt"
+        >info@paonogancho.pt</a
+      >
+    </div>
+  </div>
+</footer>
