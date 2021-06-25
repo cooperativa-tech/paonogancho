@@ -13,17 +13,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 // Animate title
 
-anime
-  .timeline({ loop: false })
-  .add({
-    targets: ".title-letter",
-    opacity: 1,
-    translateY: ["0.5em", 0],
-    duration: 750,
-    delay: (el, i) => 75 * i,
-  });
-  
-const opportunities = document.querySelectorAll('.title-opportunities-anim');
+anime.timeline({ loop: false }).add({
+  targets: ".title-letter",
+  opacity: 1,
+  translateY: ["0.5em", 0],
+  duration: 750,
+  delay: (el, i) => 75 * i,
+});
+
+const opportunities = document.querySelectorAll(".title-opportunities-anim");
 opportunities.forEach((el, i) => {
   setTimeout(() => {
     el.style.transform = `translate(0px, 0px)`;
@@ -40,8 +38,8 @@ for (let i = 0; i < navLinks.length; i++) {
   }, 150 * i);
 }
 
-const faces = document.querySelectorAll('.face');
-const reveal = document.querySelectorAll('.reveal');
+const faces = document.querySelectorAll(".face");
+const reveal = document.querySelectorAll(".reveal");
 const rands = [];
 for (let i = 0; i < faces.length; i++) {
   const rand = Math.random();
