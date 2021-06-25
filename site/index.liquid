@@ -196,7 +196,7 @@ layout: layouts/base.liquid
 
 <section class="relative mt-384 sm:mt-288">
   <div
-    class="absolute left-1/2 top-0 transform -translate-x-1/2 limit-width w-full z-20 bg-transparent"
+    class="absolute left-1/2 top-0 transform -translate-x-1/2 limit-width w-full z-20 bg-transparent pointer-events-none"
     style="height: 65vh"
   >
     <div
@@ -230,15 +230,13 @@ layout: layouts/base.liquid
   </div>
 
   <div class="relative overflow-hidden reveal" style="height: 65vh">
-    <div class="absolute w-screen h-full bg-white left-0"> 
-      <iframe
+    <div class="absolute w-screen h-full bg-white left-0">
+       <iframe
         width="100%"
         height="100%"
         frameborder="0"
-        allowfullscreen
         loading="lazy"
-        src="//umap.openstreetmap.fr/en/map/pao-no-gancho-locations_579173?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"
-      >
+        src="//umap.openstreetmap.fr/en/map/untitled-map_630958?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false">
       </iframe>
     </div>
   </div>
