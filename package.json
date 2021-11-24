@@ -2,29 +2,25 @@
   "browserslist": "ie 11",
   "scripts": {
     "dev": "NODE_ENV=development snowpack dev",
-    "optimize-fonts": "subfont $(find build -name '*.html') --in-place --no-fallbacks --inline-fonts --inline-css --font-display block",
-    "build": "NODE_ENV=production snowpack build && yarn optimize-fonts",
+    "optimize-fonts": "subfont $(find build -name '*.html') --in-place --no-fallbacks --inline-css --font-display block",
+    "build": "NODE_ENV=production yarn eleventy && NODE_ENV=production snowpack build && yarn optimize-fonts",
     "format": "prettier --write \"assets/**/*.js\" *.js \"assets/**/*.css\"",
     "lint": "prettier --check \"assets/**/*.js\" *.js \"assets/**/*.css\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "animejs": "^3.2.1"
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@snowpack/plugin-postcss": "^1.1.0",
+    "@11ty/eleventy": "^0.12.1",
+    "@snowpack/plugin-postcss": "^1.4.3",
     "@snowpack/plugin-run-script": "^2.3.0",
-    "@snowpack/plugin-webpack": "^2.3.0",
-    "autoprefixer": "^10.2.5",
-    "cssnano": "^4.1.10",
-    "eleventy-plugin-lazyimages": "^2.1.0",
-    "postcss": "^8.2.8",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
+    "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
-    "postcss-custom-media": "^8.0.0",
-    "postcss-import": "^14.0.0",
-    "postcss-media-minmax": "^5.0.0",
-    "postcss-nested": "^5.0.5",
-    "prettier": "^2.2.1",
-    "snowpack": "^3.0.13",
-    "subfont": "^5.3.0",
-    "tailwindcss": "^2.0.3"
+    "prettier": "^2.4.1",
+    "snowpack": "^3.8.8",
+    "subfont": "^6.4.0",
+    "tailwindcss": "^2.2.19"
   }
 }
