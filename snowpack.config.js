@@ -6,10 +6,7 @@ module.exports = {
   },
   plugins: [
     "@snowpack/plugin-postcss",
-    process.env.NODE_ENV === "development" && [
-      "@snowpack/plugin-run-script",
-      { cmd: "eleventy", watch: "$1 --watch" },
-    ],
+    ["@snowpack/plugin-run-script", { cmd: "eleventy", watch: "$1 --watch" }],
   ].filter((plugin) => !!plugin),
   devOptions: {
     hmrDelay: 300,
